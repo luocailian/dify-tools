@@ -1,6 +1,33 @@
 ### dify-mermaid-flask-service
 Dify实战: 手把手教你使用Dify搭建AI自动生成图表、流程图的应用
 
+工具介绍：
+<p align="center">
+<img src="https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg" height="150">
+</p>
+<h1 align="center">
+Mermaid
+</h1>
+<p align="center">
+Generate diagrams from markdown-like text.
+<p>
+<p align="center">
+  <a href="https://www.npmjs.com/package/mermaid"><img src="https://img.shields.io/npm/v/mermaid?color=ff3670&label="></a>
+<p>
+
+<p align="center">
+<a href="https://mermaid.live/"><b>Live Editor!</b></a>
+</p>
+<p align="center">
+ <a href="https://mermaid.js.org">📖 Documentation</a> | <a href="https://mermaid.js.org/intro/">🚀 Getting Started</a> | <a href="https://www.jsdelivr.com/package/npm/mermaid">🌐 CDN</a> | <a href="https://discord.gg/sKeNQX4Wtj" title="Discord invite">🙌 Join Us</a>
+</p>
+<p align="center">
+<a href="./README.zh-CN.md">简体中文</a>
+</p>
+<p align="center">
+Try Live Editor previews of future releases: <a href="https://develop.git.mermaid.live/" title="Try the mermaid version from the develop branch.">Develop</a> | <a href="https://next.git.mermaid.live/" title="Try the mermaid version from the next branch.">Next</a>
+</p>
+
 #### 使用指南
 
 1. 切换到mermaid-flask-service目录下
