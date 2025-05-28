@@ -2,6 +2,7 @@
 Dify实战: 手把手教你使用Dify搭建AI自动生成图表、流程图的应用
 
 工具介绍：
+
 mermaid官网：https://mermaid.js.org/ 
 
 GitHub代码仓库：https://github.com/mermaid-js/mermaid
