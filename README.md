@@ -75,6 +75,54 @@ markmap官网：https://markmap.js.org/
 
 GitHub代码仓库：https://github.com/markmap/markmap/tree/master
 
+
+
+# markmap
+
+[![Join the chat at https://gitter.im/gera2ld/markmap](https://badges.gitter.im/gera2ld/markmap.svg)](https://gitter.im/gera2ld/markmap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Visualize your Markdown as mindmaps.
+
+This project is heavily inspired by [dundalek's markmap](https://github.com/dundalek/markmap).
+
+👉 [Try it out](https://markmap.js.org/repl).
+
+## Related Projects
+
+Markmap is also available in:
+
+- [VSCode](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) and [Open VSX](https://open-vsx.org/extension/gera2ld/markmap-vscode)
+- Vim / Neovim:
+  - [coc-markmap](https://github.com/gera2ld/coc-markmap) ![NPM](https://img.shields.io/npm/v/coc-markmap.svg) - powered by [coc.nvim](https://github.com/neoclide/coc.nvim)
+  - [markmap.vim](https://github.com/Zeioth/markmap.nvim): for using without [coc.nvim](https://github.com/neoclide/coc.nvim)
+- Emacs: [eaf-markmap](https://github.com/emacs-eaf/eaf-markmap) -- powered by [EAF](https://github.com/emacs-eaf/emacs-application-framework)
+- MCP Server: [markmap-mcp-server](https://github.com/jinzcdev/markmap-mcp-server) [![NPM Version](https://img.shields.io/npm/v/@jinzcdev/markmap-mcp-server.svg)](https://www.npmjs.com/package/@jinzcdev/markmap-mcp-server) - powered by [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
+
+## Usage
+
+👉 [Read the documentation](https://markmap.js.org/doc
+
+
+#### markmap使用指南
+
+1. 切换到markmap-flask-service目录下
+2. 构建docker镜像：docker build -t markmap-flask-service：latest . 
+3. 启动容器： docker run -d --name markmap-flask-service -p 5005:5005 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default markmap-flask-service:latest
+4. 在dify中导入markmap思维导图工具.yml和markmap_agent.yml
+   - 把markmap思维导图工具创建出来的工作流发布为工具save_markmap，并将工具描述改为"save markmap content and get url"
+   - 在markmap_agent删除旧工具，并重新引用工具save_markmap
+
+### dify-marp-flask-service
+Dify实战: 手把手教你用 Dify 和 Marp 搭建AI自动生成 PPT 应用
+
+
+##工具介绍：
+
+marp官网： https://marp.app/
+
+GitHub代码仓库： https://github.com/marp-team/marp/tree/main
+
+
 <div align="center">
   <p>
     <img src="marp.png#gh-light-mode-only" alt="Marp" width="450" />
@@ -165,45 +213,7 @@ And there is a gravesite of classic Marp app in https://github.com/yhatt/marp. :
 
 ## Ecosystem
 
-Marp ecosystem has a lot of cool stuffs for making awesome presentation. Check out **[the awesome list of Marp](https://github
-
-# markmap
-
-[![Join the chat at https://gitter.im/gera2ld/markmap](https://badges.gitter.im/gera2ld/markmap.svg)](https://gitter.im/gera2ld/markmap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-Visualize your Markdown as mindmaps.
-
-This project is heavily inspired by [dundalek's markmap](https://github.com/dundalek/markmap).
-
-👉 [Try it out](https://markmap.js.org/repl).
-
-## Related Projects
-
-Markmap is also available in:
-
-- [VSCode](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) and [Open VSX](https://open-vsx.org/extension/gera2ld/markmap-vscode)
-- Vim / Neovim:
-  - [coc-markmap](https://github.com/gera2ld/coc-markmap) ![NPM](https://img.shields.io/npm/v/coc-markmap.svg) - powered by [coc.nvim](https://github.com/neoclide/coc.nvim)
-  - [markmap.vim](https://github.com/Zeioth/markmap.nvim): for using without [coc.nvim](https://github.com/neoclide/coc.nvim)
-- Emacs: [eaf-markmap](https://github.com/emacs-eaf/eaf-markmap) -- powered by [EAF](https://github.com/emacs-eaf/emacs-application-framework)
-- MCP Server: [markmap-mcp-server](https://github.com/jinzcdev/markmap-mcp-server) [![NPM Version](https://img.shields.io/npm/v/@jinzcdev/markmap-mcp-server.svg)](https://www.npmjs.com/package/@jinzcdev/markmap-mcp-server) - powered by [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
-
-## Usage
-
-👉 [Read the documentation](https://markmap.js.org/doc
-
-
-#### markmap使用指南
-
-1. 切换到markmap-flask-service目录下
-2. 构建docker镜像：docker build -t markmap-flask-service：latest . 
-3. 启动容器： docker run -d --name markmap-flask-service -p 5005:5005 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default markmap-flask-service:latest
-4. 在dify中导入markmap思维导图工具.yml和markmap_agent.yml
-   - 把markmap思维导图工具创建出来的工作流发布为工具save_markmap，并将工具描述改为"save markmap content and get url"
-   - 在markmap_agent删除旧工具，并重新引用工具save_markmap
-
-### dify-marp-flask-service
-Dify实战: 手把手教你用 Dify 和 Marp 搭建AI自动生成 PPT 应用
+Marp ecosystem has a lot of cool stuffs for making awesome presentation. Check out **[the awesome list of Marp](https://gith
 
 #### marp使用指南
 
