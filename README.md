@@ -108,9 +108,8 @@ Markmap is also available in:
 
 1. 切换到markmap-flask-service目录下
 
-2. 构建docker镜像：docker build -t markmap-flask-service：latest . 
-
-3. 启动容器： docker run -d --name markmap-flask-service -p 5005:5005 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default markmap-flask-service:latest
+2. 构建docker镜像：`docker build -t markmap-flask-service：latest . `
+3. 启动容器： `docker run -d --name markmap-flask-service -p 5005:5005 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default markmap-flask-service:latest`
 
 4. 在dify中导入markmap思维导图工具.yml和markmap_agent.yml
    - 把markmap思维导图工具创建出来的工作流发布为工具save_markmap，并将工具描述改为"save markmap content and get url"
@@ -223,9 +222,9 @@ Marp ecosystem has a lot of cool stuffs for making awesome presentation. Check o
 
 1. 切换到marp-flask-service目录下
 
-2. 构建docker镜像：docker build -t marp-flask-service：latest . 
+2. 构建docker镜像：`docker build -t marp-flask-service：latest . `
 
-3. 启动容器： docker run -d --name marp-flask-service -p 5005:5005 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default marp-flask-service:latest
+3. 启动容器： `docker run -d --name marp-flask-service -p 5005:5005 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default marp-flask-service:latest`
 
 4. 在dify中导入marp的PPT工具.yml和marp_agent.yml
    - 把marp的PPT工具创建出来的工作流发布为工具,名字设置为save_marp_content，工具描述为"保存marp ppt内容，并获得ppt链接"
@@ -238,9 +237,9 @@ DIfy实战：让AI给你出试卷-Dify实战：搭建自动生成试卷的Agent
 
 1. 切换到quiz-flask-service目录下
 
-2. 构建docker镜像：docker build -t quiz-flask-service：latest . 
+2. 构建docker镜像：`docker build -t quiz-flask-service：latest . `
 
-3. 启动容器： docker run -d --name markmap-flask-service -p 5006:5006 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default quiz-flask-service:latest
+3. 启动容器： `docker run -d --name markmap-flask-service -p 5006:5006 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default quiz-flask-service:latest`
 
 4. 在dify中导入创建试卷工作流.yml和保存试卷agent.yml
    - 把创建试卷工作流.yml创建出来的工作流发布为工具,名字设置为save_quiz_and_get_url，工具描述为"保存试卷并获取试卷url"
