@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"1. \n<p data-lines=\"5,6\"><strong>&#x81ea;&#x52a8;&#x6784;&#x5efa;</strong>&#xff1a;Jenkins &#x53ef;&#x4ee5;&#x81ea;&#x52a8;&#x6784;&#x5efa;&#x9879;&#x76ee;&#x6e90;&#x4ee3;&#x7801;&#xff0c;&#x5e76;&#x4e14;&#x80fd;&#x591f;&#x5728;&#x7248;&#x672c;&#x63a7;&#x5236;&#x7cfb;&#x7edf;&#xff08;&#x5982; Git&#x3001;SVN &#x7b49;&#xff09;&#x4e2d;&#x68c0;&#x6d4b;&#x5230;&#x4ee3;&#x7801;&#x53d8;&#x66f4;&#x65f6;&#x81ea;&#x52a8;&#x89e6;&#x53d1;&#x8fd9;&#x4e00;&#x8fc7;&#x7a0b;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"5,7","listIndex":1}},{"content":"2. \n<p data-lines=\"7,8\"><strong>&#x6301;&#x7eed;&#x96c6;&#x6210;</strong>&#xff1a;&#x901a;&#x8fc7;&#x5c06;&#x6240;&#x6709;&#x4ee3;&#x7801;&#x53d8;&#x66f4;&#x96c6;&#x6210;&#x5230;&#x4e00;&#x4e2a;&#x5171;&#x4eab;&#x4ed3;&#x5e93;&#x4e2d;&#xff0c;Jenkins &#x6709;&#x52a9;&#x4e8e;&#x65e9;&#x671f;&#x8bc6;&#x522b;&#x548c;&#x4fee;&#x590d;&#x9519;&#x8bef;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"7,9","listIndex":2}},{"content":"3. \n<p data-lines=\"9,10\"><strong>&#x6301;&#x7eed;&#x4ea4;&#x4ed8;</strong>&#xff1a;Jenkins &#x4e0d;&#x4ec5;&#x9650;&#x4e8e;&#x6784;&#x5efa;&#x548c;&#x6d4b;&#x8bd5;&#xff0c;&#x5b83;&#x8fd8;&#x5305;&#x542b;&#x4e86;&#x5c06;&#x4ee3;&#x7801;&#x90e8;&#x7f72;&#x5230;&#x6d4b;&#x8bd5;&#x6216;&#x751f;&#x4ea7;&#x73af;&#x5883;&#x7684;&#x8fc7;&#x7a0b;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"9,11","listIndex":3}},{"content":"4. \n<p data-lines=\"11,12\"><strong>&#x63d2;&#x4ef6;&#x7cfb;&#x7edf;</strong>&#xff1a;Jenkins &#x7f13;&#x5b58;&#x4e86;&#x4e00;&#x4e2a;&#x5f3a;&#x5927;&#x7684;&#x63d2;&#x4ef6;&#x751f;&#x6001;&#x7cfb;&#x7edf;&#xff0c;&#x8fd9;&#x4e9b;&#x63d2;&#x4ef6;&#x53ef;&#x4ee5;&#x6269;&#x5c55;&#x5176;&#x529f;&#x80fd;&#xff0c;&#x589e;&#x52a0;&#x5982;&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;&#x3001;&#x5bb9;&#x5668;&#x5316;&#x6253;&#x5305;&#x3001;&#x4e91;&#x670d;&#x52a1;&#x96c6;&#x6210;&#x7b49;&#x65b0;&#x7279;&#x6027;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"11,13","listIndex":4}},{"content":"5. \n<p data-lines=\"13,14\"><strong>&#x6613;&#x7528;&#x6027;</strong>&#xff1a;Jenkins &#x63d0;&#x4f9b;&#x4e86;&#x4e00;&#x4e2a;&#x7528;&#x6237;&#x53cb;&#x597d;&#x7684; Web &#x754c;&#x9762;&#xff0c;&#x4f7f;&#x5f97;&#x914d;&#x7f6e;&#x548c;&#x76d1;&#x63a7;&#x5de5;&#x4f5c;&#x6d41;&#x7a0b;&#x53d8;&#x5f97;&#x7b80;&#x5355;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"13,15","listIndex":5}},{"content":"6. \n<p data-lines=\"15,16\"><strong>&#x8de8;&#x5e73;&#x53f0;</strong>&#xff1a;Jenkins &#x652f;&#x6301; Windows&#x3001;Linux &#x548c; macOS&#xff0c;&#x80fd;&#x591f;&#x5728;&#x591a;&#x79cd;&#x4e0d;&#x540c;&#x7684;&#x73af;&#x5883;&#x4e2d;&#x8fd0;&#x884c;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"15,17","listIndex":6}}],"payload":{"tag":"ol","lines":"5,17"}},null)</script>
+</body>
+</html>

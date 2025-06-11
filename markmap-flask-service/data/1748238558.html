@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"&#x4e3b;&#x8981;&#x7279;&#x70b9;&#xff1a;","children":[{"content":"1. \n<p data-lines=\"5,6\"><strong>&#x8f7b;&#x91cf;&#x7ea7;&#x670d;&#x52a1;&#x5668;</strong>&#xff1a;MySQL&#x670d;&#x52a1;&#x5668;&#x4f53;&#x79ef;&#x5c0f;&#x5de7;&#xff0c;&#x8fd0;&#x884c;&#x6548;&#x7387;&#x9ad8;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"5,7","listIndex":1}},{"content":"2. \n<p data-lines=\"7,8\"><strong>SQL&#x652f;&#x6301;</strong>&#xff1a;&#x5b8c;&#x5168;&#x652f;&#x6301;&#x6807;&#x51c6;SQL&#xff0c;&#x5305;&#x62ec;&#x6570;&#x636e;&#x5b9a;&#x4e49;&#x8bed;&#x8a00;(DDL)&#x548c;&#x6570;&#x636e;&#x64cd;&#x4f5c;&#x8bed;&#x8a00;(DML)&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"7,9","listIndex":2}},{"content":"3. \n<p data-lines=\"9,10\"><strong>&#x591a;&#x7528;&#x6237;&#x548c;&#x591a;&#x7ebf;&#x7a0b;</strong>&#xff1a;&#x652f;&#x6301;&#x591a;&#x7528;&#x6237;&#x540c;&#x65f6;&#x8bbf;&#x95ee;&#xff0c;&#x5e76;&#x80fd;&#x591f;&#x5904;&#x7406;&#x591a;&#x7ebf;&#x7a0b;&#x8fde;&#x63a5;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"9,11","listIndex":3}},{"content":"4. \n<p data-lines=\"11,12\"><strong>&#x8de8;&#x5e73;&#x53f0;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x5728;&#x591a;&#x79cd;&#x64cd;&#x4f5c;&#x7cfb;&#x7edf;&#x4e0a;&#x8fd0;&#x884c;&#xff0c;&#x5305;&#x62ec;Windows&#x3001;Linux&#x3001;macOS&#x7b49;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"11,13","listIndex":4}},{"content":"5. \n<p data-lines=\"13,14\"><strong>&#x6570;&#x636e;&#x5b8c;&#x6574;&#x6027;</strong>&#xff1a;&#x652f;&#x6301;&#x4e8b;&#x52a1;&#xff08;Transaction&#xff09;&#x3001;&#x89c6;&#x56fe;&#xff08;View&#xff09;&#x3001;&#x5b58;&#x50a8;&#x8fc7;&#x7a0b;&#xff08;Stored Procedures&#xff09;&#x548c;&#x89e6;&#x53d1;&#x5668;&#xff08;Triggers&#xff09;&#x7b49;&#x7279;&#x6027;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"13,15","listIndex":5}},{"content":"6. \n<p data-lines=\"15,16\"><strong>&#x6570;&#x636e;&#x52a0;&#x5bc6;&#x548c;&#x5b89;&#x5168;</strong>&#xff1a;&#x652f;&#x6301;SSL&#x8fde;&#x63a5;&#xff0c;&#x786e;&#x4fdd;&#x6570;&#x636e;&#x4f20;&#x8f93;&#x7684;&#x5b89;&#x5168;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"15,17","listIndex":6}},{"content":"7. \n<p data-lines=\"17,18\"><strong>&#x6570;&#x636e;&#x5b58;&#x50a8;&#x548c;&#x5907;&#x4efd;</strong>&#xff1a;&#x652f;&#x6301;&#x591a;&#x79cd;&#x6570;&#x636e;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#xff08;&#x5982;InnoDB&#x3001;MyISAM&#x3001;Memory&#x7b49;&#xff09;&#xff0c;&#x63d0;&#x4f9b;&#x9ad8;&#x6548;&#x7684;&#x5b58;&#x50a8;&#x548c;&#x5feb;&#x901f;&#x7684;&#x5907;&#x4efd;&#x4e0e;&#x6062;&#x590d;&#x89e3;&#x51b3;&#x65b9;&#x6848;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"17,19","listIndex":7}},{"content":"8. \n<p data-lines=\"19,20\"><strong>&#x53ef;&#x6269;&#x5c55;&#x6027;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x6839;&#x636e;&#x9700;&#x8981;&#x8c03;&#x6574;&#x914d;&#x7f6e;&#xff0c;&#x4ee5;&#x652f;&#x6301;&#x4e0d;&#x540c;&#x7684;&#x5de5;&#x4f5c;&#x8d1f;&#x8f7d;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"19,21","listIndex":8}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x4f7f;&#x7528;&#x7684;&#x573a;&#x666f;&#xff1a;","children":[{"content":"<strong>Web&#x5e94;&#x7528;</strong>&#xff1a;MySQL&#x662f;&#x8bb8;&#x591a;&#x6d41;&#x884c;&#x7684;Web&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x7684;&#x540e;&#x7aef;&#x6570;&#x636e;&#x5e93;&#xff0c;&#x5982;WordPress&#x3001;Drupal&#x3001;Joomla&#x7b49;&#x3002;","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"<strong>&#x4f01;&#x4e1a;&#x7ea7;&#x5e94;&#x7528;</strong>&#xff1a;&#x7531;&#x4e8e;&#x5176;&#x7a33;&#x5b9a;&#x6027;&#x548c;&#x53ef;&#x9760;&#x6027;&#xff0c;MySQL&#x88ab;&#x7528;&#x4e8e;&#x8bb8;&#x591a;&#x4f01;&#x4e1a;&#x7ea7;&#x5e94;&#x7528;&#x3002;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"<strong>&#x5f00;&#x6e90;&#x9879;&#x76ee;</strong>&#xff1a;MySQL&#x662f;&#x8bb8;&#x591a;&#x5f00;&#x6e90;&#x9879;&#x76ee;&#x7684;&#x9996;&#x9009;&#x6570;&#x636e;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h3","lines":"21,22"}},{"content":"&#x7248;&#x672c;&#xff1a;","children":[{"content":"<strong>MySQL Server</strong>&#xff1a;&#x8fd9;&#x662f;MySQL&#x7684;&#x4e3b;&#x8981;&#x7248;&#x672c;&#xff0c;&#x63d0;&#x4f9b;&#x5546;&#x4e1a;&#x652f;&#x6301;&#x548c;&#x7ef4;&#x62a4;&#x3002;","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"<strong>MySQL Community Server</strong>&#xff1a;&#x8fd9;&#x662f;&#x5f00;&#x6e90;&#x7248;&#x672c;&#xff0c;&#x4efb;&#x4f55;&#x4eba;&#x90fd;&#x53ef;&#x4ee5;&#x514d;&#x8d39;&#x4f7f;&#x7528;&#x548c;&#x4fee;&#x6539;&#x3002;","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"27,28"}}]},null)</script>
+</body>
+</html>

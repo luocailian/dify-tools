@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"1. \n<p data-lines=\"3,4\"><strong>MySQL&#x6570;&#x636e;&#x5e93;</strong>&#xff1a;&#x8fd9;&#x662f;&#x4e00;&#x4e2a;&#x5f00;&#x6e90;&#x7684;&#x5173;&#x7cfb;&#x578b;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#xff0c;&#x5e7f;&#x6cdb;&#x7528;&#x4e8e;&#x5b58;&#x50a8;&#x3001;&#x68c0;&#x7d22;&#x548c;&#x7ba1;&#x7406;&#x6570;&#x636e;&#x3002;MySQL&#x4ee5;&#x5176;&#x53ef;&#x9760;&#x6027;&#x3001;&#x901f;&#x5ea6;&#x548c;&#x9002;&#x5e94;&#x6027;&#x800c;&#x95fb;&#x540d;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"3,5","listIndex":1}},{"content":"2. \n<p data-lines=\"5,6\"><strong>MySQL&#x5ba2;&#x6237;&#x7aef;</strong>&#xff1a;&#x8fd9;&#x662f;&#x4e0e;MySQL&#x6570;&#x636e;&#x5e93;&#x4ea4;&#x4e92;&#x7684;&#x547d;&#x4ee4;&#x884c;&#x5de5;&#x5177;&#x3002;&#x7528;&#x6237;&#x53ef;&#x4ee5;&#x4f7f;&#x7528;MySQL&#x5ba2;&#x6237;&#x7aef;&#x6267;&#x884c;SQL&#x8bed;&#x53e5;&#xff0c;&#x5305;&#x62ec;&#x521b;&#x5efa;&#x6570;&#x636e;&#x5e93;&#x3001;&#x8868;&#x3001;&#x63d2;&#x5165;&#x548c;&#x67e5;&#x8be2;&#x6570;&#x636e;&#x7b49;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"5,7","listIndex":2}},{"content":"3. \n<p data-lines=\"7,8\"><strong>MySQL&#x547d;&#x4ee4;</strong>&#xff1a;&#x5728;MySQL&#x5ba2;&#x6237;&#x7aef;&#x4e2d;&#xff0c;&#x7528;&#x6237;&#x53ef;&#x4ee5;&#x8f93;&#x5165;&#x5404;&#x79cd;&#x547d;&#x4ee4;&#x6765;&#x7ba1;&#x7406;&#x6570;&#x636e;&#x5e93;&#x548c;&#x6267;&#x884c;SQL&#x8bed;&#x53e5;&#x3002;&#x4f8b;&#x5982;&#xff0c;<code>show databases;</code> &#x7528;&#x4e8e;&#x5217;&#x51fa;&#x6240;&#x6709;&#x6570;&#x636e;&#x5e93;&#xff0c;<code>CREATE TABLE</code> &#x7528;&#x4e8e;&#x521b;&#x5efa;&#x4e00;&#x4e2a;&#x65b0;&#x8868;&#xff0c;<code>INSERT INTO</code> &#x7528;&#x4e8e;&#x5411;&#x8868;&#x4e2d;&#x63d2;&#x5165;&#x6570;&#x636e;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"7,9","listIndex":3}},{"content":"4. \n<p data-lines=\"9,10\"><strong>MySQL&#x7528;&#x6237;</strong>&#xff1a;&#x8fd9;&#x662f;&#x6307;&#x5177;&#x6709;&#x5408;&#x6cd5;&#x7528;&#x6237;&#x540d;&#x548c;&#x5bc6;&#x7801;&#x7684;MySQL&#x6570;&#x636e;&#x5e93;&#x7528;&#x6237;&#x8d26;&#x53f7;&#xff0c;&#x53ef;&#x4ee5;&#x7528;&#x6765;&#x8bbf;&#x95ee;&#x6570;&#x636e;&#x5e93;&#x5e76;&#x6267;&#x884c;&#x64cd;&#x4f5c;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"9,11","listIndex":4}},{"content":"5. \n<p data-lines=\"11,12\"><strong>MySQL&#x914d;&#x7f6e;</strong>&#xff1a;&#x8fd9;&#x662f;&#x6307;MySQL&#x6570;&#x636e;&#x5e93;&#x670d;&#x52a1;&#x5668;&#x7684;&#x914d;&#x7f6e;&#x6587;&#x4ef6;&#xff0c;&#x5176;&#x4e2d;&#x5305;&#x542b;&#x4e86;&#x6570;&#x636e;&#x5e93;&#x7684;&#x5404;&#x79cd;&#x8bbe;&#x7f6e;&#xff0c;&#x5982;&#x6570;&#x636e;&#x76ee;&#x5f55;&#x4f4d;&#x7f6e;&#x3001;&#x9ed8;&#x8ba4;&#x5b57;&#x7b26;&#x96c6;&#x3001;&#x8fde;&#x63a5;&#x8bbe;&#x7f6e;&#x7b49;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"11,13","listIndex":5}},{"content":"6. \n<p data-lines=\"13,14\"><strong>mysql[] &#x672f;&#x8bed;&#x89e3;&#x6790;</strong>&#xff1a;</p>","children":[{"content":"<strong>&#x7a7a;&#x95f4;&#x5206;&#x9694;&#x7b26;</strong>&#xff1a;&#x5728;MySQL&#x4e2d;&#xff0c;&quot;mysql[ ]&quot;&#x5e76;&#x975e;&#x4e00;&#x4e2a;&#x6709;&#x6548;&#x7684;SQL&#x8bed;&#x53e5;&#x6216;&#x547d;&#x4ee4;&#x3002;&#x8fd9;&#x53ef;&#x80fd;&#x662f;&#x4e00;&#x4e2a;&#x6392;&#x7248;&#x9519;&#x8bef;&#x6216;&#x8005;&#x7528;&#x6237;&#x5728;&#x590d;&#x5236;&#x7c98;&#x8d34;&#x65f6;&#x4ea7;&#x751f;&#x7684;&#x6df7;&#x6dc6;&#x3002;","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"** LakeFS&#x7684;&#x6587;&#x6863;&#x6807;&#x8bc6;**&#xff1a;&#x5728;&#x67d0;&#x4e9b;&#x4e0a;&#x4e0b;&#x6587;&#x4e2d;&#xff0c;&quot;mysql[ ]&quot;&#x53ef;&#x80fd;&#x7528;&#x4e8e;&#x6807;&#x8bc6;&#x6587;&#x6863;&#x6216;&#x8d44;&#x6e90;&#xff0c;&#x4f8b;&#x5982;&#x5728; LakeFS &#x7684;&#x6587;&#x6863;&#x4e2d;&#xff0c;&quot;mysql[ ]&quot;&#x53ef;&#x80fd;&#x6307;&#x4ee3;&#x6709;&#x5173;MySQL&#x7684;&#x90e8;&#x5206;&#x3002;","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<strong>&#x81ea;&#x5b9a;&#x4e49;&#x51fd;&#x6570;&#x6216;&#x89c4;&#x8303;</strong>&#xff1a;&#x5728;&#x67d0;&#x4e9b;&#x7279;&#x5b9a;&#x7684;&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x6216;&#x5e93;&#x4e2d;&#xff0c;&quot;mysql[ ]&quot;&#x53ef;&#x80fd;&#x88ab;&#x7528;&#x4f5c;&#x81ea;&#x5b9a;&#x4e49;&#x51fd;&#x6570;&#x6216;&#x89c4;&#x8303;&#x7684;&#x4e00;&#x90e8;&#x5206;&#xff0c;&#x4f46;&#x8fd9;&#x4e0d;&#x662f;&#x6807;&#x51c6;&#x7684;MySQL&#x7528;&#x6cd5;&#x3002;","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"li","lines":"13,18","listIndex":6}}],"payload":{"tag":"ol","lines":"3,18"}},null)</script>
+</body>
+</html>

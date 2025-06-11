@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"&#x6838;&#x5fc3;&#x7279;&#x6027;&#xff1a;","children":[{"content":"<strong>&#x652f;&#x6301;&#x591a;&#x79cd;&#x6570;&#x636e;&#x7c7b;&#x578b;</strong>&#xff1a;MySQL&#x652f;&#x6301;&#x591a;&#x79cd;&#x6570;&#x636e;&#x7c7b;&#x578b;&#xff0c;&#x5305;&#x62ec;&#x4f46;&#x4e0d;&#x9650;&#x4e8e;&#x6574;&#x6570;&#x3001;&#x5b57;&#x7b26;&#x4e32;&#x3001;&#x6d6e;&#x70b9;&#x6570;&#x3001;&#x65e5;&#x671f;&#x548c;&#x65f6;&#x95f4;&#x7b49;&#x3002;","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"<strong>SQL&#x652f;&#x6301;</strong>&#xff1a;MySQL&#x4f7f;&#x7528;&#x7ed3;&#x6784;&#x5316;&#x67e5;&#x8be2;&#x8bed;&#x8a00;&#xff08;SQL&#xff09;&#x6765;&#x7ba1;&#x7406;&#x6570;&#x636e;&#x3002;","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"<strong>&#x4e8b;&#x52a1;&#x5904;&#x7406;</strong>&#xff1a;&#x5b83;&#x652f;&#x6301;&#x4e8b;&#x52a1;&#xff0c;&#x8fd9;&#x610f;&#x5473;&#x7740;&#x53ef;&#x4ee5;&#x6267;&#x884c;&#x4e00;&#x7cfb;&#x5217;&#x64cd;&#x4f5c;&#xff0c;&#x8981;&#x4e48;&#x5168;&#x90e8;&#x6210;&#x529f;&#xff0c;&#x8981;&#x4e48;&#x5728;&#x9047;&#x5230;&#x9519;&#x8bef;&#x65f6;&#x5168;&#x90e8;&#x56de;&#x6eda;&#x3002;","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"<strong>&#x6570;&#x636e;&#x4e00;&#x81f4;&#x6027;</strong>&#xff1a;&#x786e;&#x4fdd;&#x5b58;&#x50a8;&#x7684;&#x6570;&#x636e;&#x662f;&#x4e00;&#x81f4;&#x7684;&#x3002;","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"<strong>&#x591a;&#x7528;&#x6237;&#x5e76;&#x53d1;</strong>&#xff1a;&#x5141;&#x8bb8;&#x591a;&#x4e2a;&#x7528;&#x6237;&#x540c;&#x65f6;&#x8bbf;&#x95ee;&#x6570;&#x636e;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x5e94;&#x7528;&#x573a;&#x666f;&#xff1a;","children":[{"content":"<strong>Web&#x5e94;&#x7528;</strong>&#xff1a;MySQL&#x901a;&#x5e38;&#x7528;&#x4e8e; Web &#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x4e2d;&#xff0c;&#x7279;&#x522b;&#x662f;&#x90a3;&#x4e9b;&#x9700;&#x8981;&#x5904;&#x7406;&#x5927;&#x91cf;&#x5e76;&#x53d1;&#x8bf7;&#x6c42;&#x7684;&#x5e94;&#x7528;&#x3002;","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<strong>&#x7535;&#x5b50;&#x5546;&#x52a1;</strong>&#xff1a;&#x5728;&#x7ebf;&#x5546;&#x5e97;&#x548c;&#x7535;&#x5b50;&#x5546;&#x52a1;&#x5e73;&#x53f0;&#x5e7f;&#x6cdb;&#x4f7f;&#x7528;MySQL&#x6765;&#x5b58;&#x50a8;&#x4ea7;&#x54c1;&#x6570;&#x636e;&#x3001;&#x8ba2;&#x5355;&#x548c;&#x7528;&#x6237;&#x4fe1;&#x606f;&#x3002;","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<strong>&#x5185;&#x5bb9;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;</strong>&#xff1a;&#x5982; WordPress &#x548c; Joomla &#x7b49;&#x5185;&#x5bb9;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#x5e38;&#x7528;MySQL&#x4f5c;&#x4e3a;&#x540e;&#x7aef;&#x6570;&#x636e;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h3","lines":"11,12"}},{"content":"&#x7279;&#x5b9a;&#x7248;&#x672c;&#xff1a;","children":[{"content":"<strong>MySQL Server</strong>&#xff1a;&#x8fd9;&#x662f;&#x4e3b;&#x8981;&#x7684;&#x6570;&#x636e;&#x5e93;&#x670d;&#x52a1;&#x5668;&#xff0c;&#x63d0;&#x4f9b;&#x6240;&#x6709;&#x6838;&#x5fc3;&#x529f;&#x80fd;&#x3002;","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"<strong>MySQL Cluster</strong>&#xff1a;&#x4e3a;&#x9ad8;&#x6027;&#x80fd;&#x548c;&#x9ad8;&#x53ef;&#x7528;&#x6027;&#x63d0;&#x4f9b;&#x539f;&#x751f;&#x89e3;&#x51b3;&#x65b9;&#x6848;&#x3002;","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<strong>MySQL Workbench</strong>&#xff1a;&#x4e00;&#x4e2a;&#x96c6;&#x6210;&#x5f00;&#x53d1;&#x73af;&#x5883;&#xff08;IDE&#xff09;&#xff0c;&#x7528;&#x4e8e;&#x6570;&#x636e;&#x5e93;&#x8bbe;&#x8ba1;&#x3001;&#x5f00;&#x53d1;&#x548c;&#x7ba1;&#x7406;&#x3002;","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h3","lines":"17,18"}},{"content":"&#x4f18;&#x70b9;&#xff1a;","children":[{"content":"<strong>&#x5f00;&#x6e90;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x514d;&#x8d39;&#x4f7f;&#x7528;&#x3002;","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"<strong>&#x793e;&#x533a;&#x652f;&#x6301;</strong>&#xff1a;&#x6709;&#x5927;&#x91cf;&#x7684;&#x7528;&#x6237;&#x793e;&#x533a;&#x63d0;&#x4f9b;&#x5e2e;&#x52a9;&#x3002;","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"<strong>&#x6613;&#x4e8e;&#x4f7f;&#x7528;</strong>&#xff1a;&#x6613;&#x4e8e;&#x5b89;&#x88c5;&#x548c;&#x7ba1;&#x7406;&#x3002;","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<strong>&#x6027;&#x80fd;</strong>&#xff1a;&#x5728;&#x5904;&#x7406;&#x5927;&#x91cf;&#x6570;&#x636e;&#x65b9;&#x9762;&#x8868;&#x73b0;&#x826f;&#x597d;&#x3002;","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h3","lines":"23,24"}},{"content":"&#x7f3a;&#x70b9;&#xff1a;","children":[{"content":"<strong>&#x8bb8;&#x53ef;</strong>&#xff1a;&#x867d;&#x7136;MySQL&#x662f;&#x5f00;&#x6e90;&#x7684;&#xff0c;&#x4f46;&#x5176;&#x5546;&#x7528;&#x7248;&#x672c;&#xff08;MySQL Enterprise&#xff09;&#x9700;&#x8981;&#x4ed8;&#x8d39;&#x3002;","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"<strong>&#x5b89;&#x5168;&#x6027;</strong>&#xff1a;&#x4e0e;&#x5176;&#x4ed6;&#x6570;&#x636e;&#x5e93;&#x7cfb;&#x7edf;&#x76f8;&#x6bd4;&#xff0c;MySQL&#x7684;&#x5b89;&#x5168;&#x6027;&#x5728;&#x67d0;&#x4e9b;&#x65b9;&#x9762;&#x53ef;&#x80fd;&#x4e0d;&#x5982;&#x5176;&#x4ed6;&#x7cfb;&#x7edf;&#x3002;","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h3","lines":"30,31"}}]},null)</script>
+</body>
+</html>

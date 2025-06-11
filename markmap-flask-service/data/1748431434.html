@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"&#x4f5c;&#x4e3a;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;","children":[{"content":"1. \n<p data-lines=\"5,6\"><strong>MySQL &#x6570;&#x636e;&#x5e93;</strong>&#xff1a;MySQL &#x662f;&#x4e00;&#x4e2a;&#x5f00;&#x6e90;&#x7684;&#x5173;&#x7cfb;&#x578b;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#xff0c;&#x7531;&#x745e;&#x5178; MySQL AB &#x516c;&#x53f8;&#x5f00;&#x53d1;&#x3002;&#x5b83;&#x662f;&#x76ee;&#x524d;&#x6700;&#x6d41;&#x884c;&#x7684;&#x5f00;&#x6e90;&#x6570;&#x636e;&#x5e93;&#x4e4b;&#x4e00;&#xff0c;&#x5e7f;&#x6cdb;&#x7528;&#x4e8e;&#x5b58;&#x50a8;&#x3001;&#x7ba1;&#x7406;&#x548c;&#x67e5;&#x8be2;&#x6570;&#x636e;&#x3002;</p>","children":[{"content":"<strong>&#x4e3b;&#x8981;&#x7279;&#x6027;</strong>&#xff1a;","children":[{"content":"&#x652f;&#x6301;&#x591a;&#x79cd;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;&#x3002;","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"&#x652f;&#x6301;&#x9ad8;&#x5e76;&#x53d1;&#x3001;&#x9ad8;&#x53ef;&#x7528;&#x548c;&#x6613;&#x6269;&#x5c55;&#x3002;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"&#x517c;&#x5bb9;&#x591a;&#x79cd;&#x5e73;&#x53f0;&#xff0c;&#x5982; Linux&#x3001;Windows &#x7b49;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"&#x5f3a;&#x5927;&#x7684;&#x5b89;&#x5168;&#x6027;&#x548c;&#x7a33;&#x5b9a;&#x6027;&#x3002;","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"li","lines":"7,13"}}],"payload":{"tag":"li","lines":"5,13","listIndex":1}},{"content":"2. \n<p data-lines=\"13,14\"><strong>MySQL &#x670d;&#x52a1;&#x5668;</strong>&#xff1a;MySQL &#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#x8fd0;&#x884c;&#x7684;&#x5b9e;&#x4f8b;&#x79f0;&#x4e3a; MySQL &#x670d;&#x52a1;&#x5668;&#x3002;&#x5b83;&#x53ef;&#x4ee5;&#x5904;&#x7406;&#x5ba2;&#x6237;&#x7aef;&#x7684;&#x8fde;&#x63a5;&#x8bf7;&#x6c42;&#x5e76;&#x6267;&#x884c; SQL &#x8bed;&#x53e5;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"13,15","listIndex":2}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x4f5c;&#x4e3a;&#x547d;&#x4ee4;&#x548c;&#x5ba2;&#x6237;&#x7aef;&#x5de5;&#x5177;","children":[{"content":"1. \n<p data-lines=\"17,18\"><strong>MySQL &#x547d;&#x4ee4;&#x884c;&#x5de5;&#x5177;</strong>&#xff1a;&#x5728;&#x547d;&#x4ee4;&#x884c;&#x73af;&#x5883;&#x4e0b;&#xff0c;<code>mysql</code> &#x662f;&#x4e00;&#x4e2a;&#x7528;&#x4e8e;&#x8fde;&#x63a5;&#x5e76;&#x64cd;&#x4f5c; MySQL &#x670d;&#x52a1;&#x5668;&#x7684;&#x5ba2;&#x6237;&#x7aef;&#x5de5;&#x5177;&#x3002;</p>","children":[{"content":"<strong>&#x5e38;&#x7528;&#x547d;&#x4ee4;</strong>&#xff1a;","children":[{"content":"<code>mysql -u &#x7528;&#x6237;&#x540d; -p</code>&#xff1a;&#x8fde;&#x63a5;&#x5230; MySQL &#x670d;&#x52a1;&#x5668;&#x3002;","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<code>SHOW DATABASES;</code>&#xff1a;&#x663e;&#x793a;&#x6240;&#x6709;&#x53ef;&#x7528;&#x7684;&#x6570;&#x636e;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"<code>USE &#x6570;&#x636e;&#x5e93;&#x540d;;</code>&#xff1a;&#x5207;&#x6362;&#x5230;&#x6307;&#x5b9a;&#x7684;&#x6570;&#x636e;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"li","lines":"19,24"}}],"payload":{"tag":"li","lines":"17,24","listIndex":1}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"&#x4f5c;&#x4e3a;&#x7279;&#x5b9a;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x6216;&#x64cd;&#x4f5c;","children":[{"content":"1. \n<p data-lines=\"26,27\"><strong>MySQL &#x6570;&#x636e;&#x7c7b;&#x578b;</strong>&#xff1a;&#x5728; MySQL &#x4e2d;&#xff0c;<code>MySQL</code> &#x4e5f;&#x53ef;&#x4ee5;&#x6307;&#x7279;&#x5b9a;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#xff0c;&#x5982; <code>TEXT</code>&#x3001;<code>VARCHAR</code>&#x3001;<code>INT</code> &#x7b49;&#x3002;</p>","children":[{"content":"<strong>&#x793a;&#x4f8b;</strong>&#xff1a;","children":[{"content":"<code>TEXT</code>&#xff1a;&#x7528;&#x4e8e;&#x5b58;&#x50a8;&#x5927;&#x6587;&#x672c;&#x3002;","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"<code>VARCHAR</code>&#xff1a;&#x7528;&#x4e8e;&#x5b58;&#x50a8;&#x53ef;&#x53d8;&#x957f;&#x5ea6;&#x7684;&#x5b57;&#x7b26;&#x4e32;&#x3002;","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"li","lines":"28,32"}}],"payload":{"tag":"li","lines":"26,32","listIndex":1}}],"payload":{"tag":"h3","lines":"24,25"}},{"content":"&#x4f5c;&#x4e3a;&#x4ee3;&#x7801;&#x793a;&#x4f8b;&#x6216;&#x5e93;","children":[{"content":"1. \n<p data-lines=\"34,35\"><strong>MySQL &#x7ed3;&#x5408;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;</strong>&#xff1a;&#x5728;&#x8bb8;&#x591a;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;&#x4e2d;&#xff0c;&#x53ef;&#x4ee5;&#x4f7f;&#x7528; <code>mysql</code> &#x6a21;&#x5757;&#x6216;&#x5e93;&#x6765;&#x8fde;&#x63a5;&#x548c;&#x64cd;&#x7eb5; MySQL &#x6570;&#x636e;&#x5e93;&#x3002;</p>","children":[{"content":"<strong>&#x793a;&#x4f8b;</strong>&#xff1a;","children":[{"content":"Python &#x4e2d;&#x7684; <code>mysql-connector-python</code> &#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"PHP &#x4e2d;&#x7684; <code>PDO</code> &#x548c; <code>mysqli</code> &#x6269;&#x5c55;&#x3002;","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"36,40"}}],"payload":{"tag":"li","lines":"34,40","listIndex":1}}],"payload":{"tag":"h3","lines":"32,33"}}]},null)</script>
+</body>
+</html>

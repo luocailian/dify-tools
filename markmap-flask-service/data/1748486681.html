@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"Jenkins &#x7684;&#x5b9a;&#x4e49;","children":[],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x4e3b;&#x8981;&#x529f;&#x80fd;","children":[{"content":"1. <strong>&#x81ea;&#x52a8;&#x5316;&#x6784;&#x5efa;</strong>&#xff1a;Jenkins &#x53ef;&#x4ee5;&#x81ea;&#x52a8;&#x68c0;&#x6d4b;&#x4ee3;&#x7801;&#x4ed3;&#x5e93;&#x4e2d;&#x7684;&#x66f4;&#x6539;&#xff0c;&#x7136;&#x540e;&#x89e6;&#x53d1;&#x6784;&#x5efa;&#x8fc7;&#x7a0b;&#x3002;","children":[],"payload":{"tag":"li","lines":"7,8","listIndex":1}},{"content":"2. <strong>&#x6267;&#x884c;&#x6d4b;&#x8bd5;</strong>&#xff1a;&#x5b83;&#x53ef;&#x4ee5;&#x5728;&#x6784;&#x5efa;&#x8fc7;&#x7a0b;&#x4e2d;&#x81ea;&#x52a8;&#x6267;&#x884c;&#x5355;&#x5143;&#x6d4b;&#x8bd5;&#x3001;&#x96c6;&#x6210;&#x6d4b;&#x8bd5;&#x7b49;&#x3002;","children":[],"payload":{"tag":"li","lines":"8,9","listIndex":2}},{"content":"3. <strong>&#x96c6;&#x6210;&#x7ed3;&#x679c;&#x7684;&#x53cd;&#x9988;</strong>&#xff1a;Jenkins &#x53ef;&#x4ee5;&#x63d0;&#x4f9b;&#x8be6;&#x7ec6;&#x7684;&#x6784;&#x5efa;&#x8f93;&#x51fa;&#x548c;&#x6d4b;&#x8bd5;&#x7ed3;&#x679c;&#xff0c;&#x5e76;&#x5b9e;&#x65f6;&#x66f4;&#x65b0;&#x8fd9;&#x4e9b;&#x4fe1;&#x606f;&#x3002;","children":[],"payload":{"tag":"li","lines":"9,10","listIndex":3}},{"content":"4. <strong>&#x62a5;&#x544a;&#x751f;&#x6210;</strong>&#xff1a;&#x751f;&#x6210;&#x6613;&#x4e8e;&#x7406;&#x89e3;&#x7684;&#x62a5;&#x544a;&#xff0c;&#x5e2e;&#x52a9;&#x56e2;&#x961f;&#x6210;&#x5458;&#x5feb;&#x901f;&#x4e86;&#x89e3;&#x6784;&#x5efa;&#x72b6;&#x6001;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,11","listIndex":4}},{"content":"5. <strong>&#x90e8;&#x7f72;&#x5230;&#x751f;&#x4ea7;&#x73af;&#x5883;</strong>&#xff1a;&#x652f;&#x6301;&#x81ea;&#x52a8;&#x5c06;&#x6784;&#x5efa;&#x7269;&#x90e8;&#x7f72;&#x5230;&#x4e0d;&#x540c;&#x7684;&#x73af;&#x5883;&#x548c;&#x670d;&#x52a1;&#x5668;&#x3002;","children":[],"payload":{"tag":"li","lines":"11,12","listIndex":5}},{"content":"6. <strong>&#x63d2;&#x4ef6;&#x751f;&#x6001;</strong>&#xff1a;Jenkins &#x63d0;&#x4f9b;&#x4e86;&#x4e30;&#x5bcc;&#x7684;&#x63d2;&#x4ef6;&#xff0c;&#x53ef;&#x4ee5;&#x6269;&#x5c55;&#x5176;&#x529f;&#x80fd;&#xff0c;&#x652f;&#x6301;&#x4e0e;&#x5404;&#x79cd;&#x5de5;&#x5177;&#x548c;&#x670d;&#x52a1;&#x7684;&#x96c6;&#x6210;&#x3002;","children":[],"payload":{"tag":"li","lines":"12,14","listIndex":6}}],"payload":{"tag":"h3","lines":"6,7"}},{"content":"&#x7279;&#x70b9;","children":[{"content":"<strong>&#x6613;&#x4e8e;&#x4f7f;&#x7528;</strong>&#xff1a;Jenkins &#x6709;&#x4e00;&#x4e2a;&#x7528;&#x6237;&#x53cb;&#x597d;&#x7684;&#x754c;&#x9762;&#xff0c;&#x65b9;&#x4fbf;&#x65b0;&#x624b;&#x5feb;&#x901f;&#x4e0a;&#x624b;&#x3002;","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<strong>&#x53ef;&#x6269;&#x5c55;&#x6027;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x901a;&#x8fc7;&#x63d2;&#x4ef6;&#x6765;&#x589e;&#x5f3a;&#x5176;&#x529f;&#x80fd;&#xff0c;&#x6ee1;&#x8db3;&#x4e0d;&#x540c;&#x7684;&#x5f00;&#x53d1;&#x9700;&#x6c42;&#x3002;","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"<strong>&#x793e;&#x533a;&#x652f;&#x6301;</strong>&#xff1a;Jenkins &#x6709;&#x4e00;&#x4e2a;&#x6d3b;&#x8dc3;&#x7684;&#x5f00;&#x6e90;&#x793e;&#x533a;&#xff0c;&#x63d0;&#x4f9b;&#x5927;&#x91cf;&#x6587;&#x6863;&#x3001;&#x6559;&#x7a0b;&#x548c;&#x793e;&#x533a;&#x652f;&#x6301;&#x3002;","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<strong>&#x8de8;&#x5e73;&#x53f0;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x5728;&#x591a;&#x79cd;&#x64cd;&#x4f5c;&#x7cfb;&#x7edf;&#x4e0a;&#x8fd0;&#x884c;&#xff0c;&#x5982; Windows&#x3001;Linux &#x548c; macOS&#x3002;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<strong>&#x7075;&#x6d3b;&#x6027;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x652f;&#x6301;&#x5404;&#x79cd;&#x6784;&#x5efa;&#x5de5;&#x5177;&#xff08;&#x5982; Maven&#x3001;Gradle&#xff09;&#x3001;&#x7248;&#x672c;&#x63a7;&#x5236;&#x7cfb;&#x7edf;&#xff08;&#x5982; Git&#x3001;SVN&#xff09;&#x548c;&#x90e8;&#x7f72;&#x76ee;&#x6807;&#xff08;&#x5982; Docker&#x3001;J &#x437;&#x430;&#x43b;&#x438;&#x43b;&#xff09;&#x3002;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h3","lines":"14,15"}},{"content":"&#x4f7f;&#x7528;&#x573a;&#x666f;","children":[{"content":"<strong>&#x81ea;&#x52a8;&#x5316;&#x6d4b;&#x8bd5;</strong>&#xff1a;&#x81ea;&#x52a8;&#x8fd0;&#x884c;&#x6d4b;&#x8bd5;&#x7528;&#x4f8b;&#xff0c;&#x5feb;&#x901f;&#x53d1;&#x73b0;&#x95ee;&#x9898;&#x3002;","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"<strong>&#x6301;&#x7eed;&#x96c6;&#x6210;</strong>&#xff1a;&#x5c06;&#x4ee3;&#x7801;&#x5408;&#x5e76;&#x5230;&#x4e3b;&#x5206;&#x652f;&#x65f6;&#x81ea;&#x52a8;&#x8fd0;&#x884c;&#x6784;&#x5efa;&#x548c;&#x6d4b;&#x8bd5;&#x3002;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"<strong>&#x6301;&#x7eed;&#x4ea4;&#x4ed8;</strong>&#xff1a;&#x81ea;&#x52a8;&#x5316;&#x90e8;&#x7f72;&#x6d41;&#x7a0b;&#xff0c;&#x52a0;&#x5feb;&#x8f6f;&#x4ef6;&#x4ece;&#x6d4b;&#x8bd5;&#x5230;&#x751f;&#x4ea7;&#x73af;&#x5883;&#x7684;&#x901f;&#x5ea6;&#x3002;","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"<strong>DevOps</strong>&#xff1a;&#x652f;&#x6301; DevOps &#x5b9e;&#x8df5;&#xff0c;&#x63d0;&#x9ad8;&#x5f00;&#x53d1;&#x6548;&#x7387;&#x548c;&#x7cfb;&#x7edf;&#x53ef;&#x9760;&#x6027;&#x3002;","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"h3","lines":"21,22"}}]},null)</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"1. \n<p data-lines=\"5,6\"><strong>&#x5f00;&#x653e;&#x6e90;&#x7801;</strong>&#xff1a;MySQL &#x662f;&#x57fa;&#x4e8e; GNU &#x901a;&#x7528;&#x516c;&#x5171;&#x8bb8;&#x53ef;&#x8bc1;&#xff08;GPL&#xff09;&#x53d1;&#x5e03;&#x7684;&#x5f00;&#x6e90;&#x8f6f;&#x4ef6;&#xff0c;&#x8fd9;&#x610f;&#x5473;&#x7740;&#x4efb;&#x4f55;&#x4eba;&#x90fd;&#x53ef;&#x4ee5;&#x514d;&#x8d39;&#x4f7f;&#x7528;&#x3001;&#x4fee;&#x6539;&#x548c;&#x5206;&#x53d1;&#x5b83;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"5,7","listIndex":1}},{"content":"2. \n<p data-lines=\"7,8\"><strong>&#x652f;&#x6301;&#x591a;&#x79cd;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;</strong>&#xff1a;MySQL &#x652f;&#x6301;&#x591a;&#x79cd;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;&#xff0c;&#x5982; C&#x3001;C++&#x3001;Java&#x3001;PHP&#x3001;Python&#x3001;Perl&#x3001;Ruby &#x548c; PHP &#x7b49;&#xff0c;&#x4f7f;&#x5f97;&#x5f00;&#x53d1;&#x8005;&#x53ef;&#x4ee5;&#x8f7b;&#x677e;&#x5730;&#x5c06;&#x5176;&#x96c6;&#x6210;&#x5230;&#x5404;&#x79cd;&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x4e2d;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"7,9","listIndex":2}},{"content":"3. \n<p data-lines=\"9,10\"><strong>&#x8de8;&#x5e73;&#x53f0;</strong>&#xff1a;MySQL &#x652f;&#x6301;&#x591a;&#x4e2a;&#x64cd;&#x4f5c;&#x7cfb;&#x7edf;&#xff0c;&#x5305;&#x62ec; Windows&#x3001;Linux&#x3001;macOS&#x3001;Unix &#x548c;&#x591a;&#x79cd;&#x7c7b; Unix &#x7cfb;&#x7edf;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"9,11","listIndex":3}},{"content":"4. \n<p data-lines=\"11,12\"><strong>&#x6570;&#x636e;&#x5b58;&#x50a8;&#x5f15;&#x64ce;</strong>&#xff1a;MySQL &#x652f;&#x6301;&#x591a;&#x79cd;&#x6570;&#x636e;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#xff0c;&#x5982; InnoDB&#x3001;MyISAM&#x3001;Memory&#x3001;NDB Cluster&#x3001;Merge &#x548c; CSV&#x3002;&#x4e0d;&#x540c;&#x7684;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#x9002;&#x7528;&#x4e8e;&#x4e0d;&#x540c;&#x7684;&#x573a;&#x666f;&#xff0c;&#x4f8b;&#x5982;&#xff0c;InnoDB &#x652f;&#x6301;&#x4e8b;&#x52a1;&#x5904;&#x7406;&#x548c;&#x884c;&#x7ea7;&#x9501;&#x5b9a;&#xff0c;&#x800c; MyISAM &#x66f4;&#x9002;&#x5408;&#x53ea;&#x8bfb;&#x67e5;&#x8be2;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"11,13","listIndex":4}},{"content":"5. \n<p data-lines=\"13,14\"><strong>&#x5907;&#x4efd;&#x4e0e;&#x590d;&#x5236;</strong>&#xff1a;MySQL &#x63d0;&#x4f9b;&#x4e86;&#x591a;&#x79cd;&#x5907;&#x4efd;&#x548c;&#x590d;&#x5236;&#x7b56;&#x7565;&#xff0c;&#x5305;&#x62ec;&#x903b;&#x8f91;&#x590d;&#x5236;&#x548c;&#x7269;&#x7406;&#x590d;&#x5236;&#xff0c;&#x8fd9;&#x5bf9;&#x4e8e;&#x9ad8;&#x53ef;&#x7528;&#x6027;&#x548c;&#x707e;&#x96be;&#x6062;&#x590d;&#x81f3;&#x5173;&#x91cd;&#x8981;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"13,15","listIndex":5}},{"content":"6. \n<p data-lines=\"15,16\"><strong>&#x9ad8;&#x6027;&#x80fd;</strong>&#xff1a;MySQL &#x5728;&#x6027;&#x80fd;&#x65b9;&#x9762;&#x8868;&#x73b0;&#x4f18;&#x79c0;&#xff0c;&#x80fd;&#x591f;&#x5904;&#x7406;&#x5927;&#x91cf;&#x6570;&#x636e;&#x548c;&#x9ad8;&#x5e76;&#x53d1;&#x8bf7;&#x6c42;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"15,17","listIndex":6}},{"content":"7. \n<p data-lines=\"17,18\"><strong>&#x6613;&#x7528;&#x6027;</strong>&#xff1a;MySQL &#x63d0;&#x4f9b;&#x4e86;&#x4e00;&#x4e2a;&#x6613;&#x4e8e;&#x4f7f;&#x7528;&#x7684;&#x547d;&#x4ee4;&#x884c;&#x63a5;&#x53e3;&#x548c;&#x56fe;&#x5f62;&#x754c;&#x9762;&#x5de5;&#x5177;&#xff0c;&#x5982; phpMyAdmin&#xff0c;&#x65b9;&#x4fbf;&#x7528;&#x6237;&#x8fdb;&#x884c;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"17,19","listIndex":7}}],"payload":{"tag":"ol","lines":"5,19"}},null)</script>
+</body>
+</html>

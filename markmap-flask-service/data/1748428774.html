@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css"><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"&#x7b80;&#x4ecb;","children":[{"content":"<strong>&#x7248;&#x672c;&#x7ba1;&#x7406;</strong>&#xff1a;MySQL &#x7531;&#x745e;&#x5178;&#x7684;&#x4e00;&#x5bb6;&#x8f6f;&#x4ef6;&#x5f00;&#x53d1;&#x516c;&#x53f8; MySQL AB &#x521b;&#x5efa;&#xff0c;&#x540e;&#x6765;&#x88ab;_sun microsystems_&#xff08;&#x73b0;&#x4e3a;&#x7532;&#x9aa8;&#x6587;&#x516c;&#x53f8;&#xff09;&#x6536;&#x8d2d;&#x3002;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<strong>&#x5f00;&#x6e90;&#x4e0e;&#x5546;&#x4e1a;&#x7248;</strong>&#xff1a;MySQL &#x63d0;&#x4f9b;&#x4e86;&#x5f00;&#x6e90;&#x7248;&#x672c;&#xff08;GPL &#x8bb8;&#x53ef;&#xff09;&#x548c;&#x5546;&#x4e1a;&#x7248;&#xff08;&#x901a;&#x5e38;&#x7528;&#x4e8e;&#x4f01;&#x4e1a;&#x7ea7;&#x5e94;&#x7528;&#xff09;&#x3002;","children":[],"payload":{"tag":"li","lines":"5,7"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x6838;&#x5fc3;&#x7279;&#x6027;","children":[{"content":"<strong>&#x652f;&#x6301;&#x591a;&#x79cd;&#x6570;&#x636e;&#x7c7b;&#x578b;</strong>&#xff1a;MySQL &#x652f;&#x6301;&#x5305;&#x62ec;&#x6570;&#x503c;&#x3001;&#x6587;&#x672c;&#x548c;&#x4e8c;&#x8fdb;&#x5236;&#x6570;&#x636e;&#x7b49;&#x591a;&#x79cd;&#x6570;&#x636e;&#x7c7b;&#x578b;&#xff0c;&#x8fd9;&#x4f7f;&#x5f97;&#x5b83;&#x9002;&#x5408;&#x5404;&#x79cd;&#x7c7b;&#x578b;&#x7684;&#x6570;&#x636e;&#x5b58;&#x50a8;&#x9700;&#x6c42;&#x3002;","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"<strong>&#x4e8b;&#x52a1;&#x5904;&#x7406;</strong>&#xff1a;MySQL &#x652f;&#x6301;ACID&#xff08;&#x539f;&#x5b50;&#x6027;&#x3001;&#x4e00;&#x81f4;&#x6027;&#x3001;&#x9694;&#x79bb;&#x6027;&#x3001;&#x6301;&#x4e45;&#x6027;&#xff09;&#x7279;&#x6027;&#xff0c;&#x4fdd;&#x969c;&#x6570;&#x636e; integrity&#x3002;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"<strong>&#x590d;&#x5236;&#x529f;&#x80fd;</strong>&#xff1a;MySQL &#x63d0;&#x4f9b;&#x4e86;&#x5f3a;&#x5927;&#x7684;&#x6570;&#x636e;&#x590d;&#x5236;&#x529f;&#x80fd;&#xff0c;&#x7528;&#x4e8e;&#x6570;&#x636e;&#x5907;&#x4efd;&#x548c;&#x5206;&#x5e03;&#x5f0f;&#x7684;&#x6570;&#x636e;&#x5e93;&#x73af;&#x5883;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"<strong>&#x8fde;&#x63a5;&#x591a;&#x79cd;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;</strong>&#xff1a;MySQL &#x652f;&#x6301;&#x591a;&#x79cd;&#x5ba2;&#x6237;&#x7aef;&#x5e93;&#xff0c;&#x4f7f;&#x5f97;&#x5b83;&#x80fd;&#x591f;&#x65b9;&#x4fbf;&#x5730;&#x4e0e;&#x591a;&#x79cd;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;&#xff08;&#x5982; Python&#x3001;Java&#x3001;PHP&#x7b49;&#xff09;&#x96c6;&#x6210;&#x3002;","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"<strong>&#x6613;&#x4e8e;&#x4f7f;&#x7528;&#x548c;&#x6269;&#x5c55;</strong>&#xff1a;MySQL &#x7684;&#x5b89;&#x88c5;&#x548c;&#x4f7f;&#x7528;&#x76f8;&#x5bf9;&#x7b80;&#x5355;&#xff0c;&#x540c;&#x65f6;&#x4e5f;&#x652f;&#x6301;&#x6dfb;&#x52a0;&#x65b0;&#x7684;&#x529f;&#x80fd;&#x548c;&#x63d2;&#x4ef6;&#x3002;","children":[],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"h3","lines":"7,8"}},{"content":"&#x5e94; &#x7528; &#x573a; &#x666f;","children":[{"content":"<strong>Web &#x5e94;&#x7528;</strong>&#xff1a;MySQL &#x662f;&#x8bb8;&#x591a;&#x6d41;&#x884c;&#x7684; Web &#x5185;&#x5bb9;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#xff08;&#x5982; Joomla&#x3001;WordPress&#xff09;&#x548c;&#x7535;&#x5b50;&#x5546;&#x52a1;&#x5e73;&#x53f0;&#xff08;&#x5982; Magento&#xff09;&#x7684;&#x9996;&#x9009;&#x6570;&#x636e;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<strong>&#x4f01;&#x4e1a;&#x7ea7;&#x5e94;&#x7528;</strong>&#xff1a;&#x8bb8;&#x591a;&#x5927;&#x578b;&#x4f01;&#x4e1a;&#x4e5f;&#x9009;&#x62e9; MySQL &#x4f5c;&#x4e3a;&#x5176;&#x6570;&#x636e;&#x5b58;&#x50a8;&#x89e3;&#x51b3;&#x65b9;&#x6848;&#xff0c;&#x5c24;&#x5176;&#x662f;&#x5bf9;&#x4e8e;&#x8bfb;&#x5bc6;&#x96c6;&#x578b;&#x5e94;&#x7528;&#x3002;","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"<strong>&#x6570;&#x636e;&#x5904;&#x7406;&#x548c;&#x5206;&#x6790;</strong>&#xff1a;MySQL &#x4e5f;&#x5e38;&#x7528;&#x4e8e;&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x548c;&#x5927;&#x6570;&#x636e;&#x5e94;&#x7528;&#x4e2d;&#x3002;","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h3","lines":"14,15"}},{"content":"&#x4e0e; Docker &#x7684;&#x96c6;&#x6210;","children":[{"content":"\n<p data-lines=\"22,23\"><strong>&#x5b98;&#x65b9;&#x955c;&#x50cf;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x901a;&#x8fc7; Docker Hub &#x641c;&#x7d22;&#x5b98;&#x65b9; MySQL &#x955c;&#x50cf;&#xff08;<code>mysql</code>&#xff09;&#x6765;&#x83b7;&#x53d6;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"\n<p data-lines=\"23,24\"><strong>&#x521b;&#x5efa;&#x548c;&#x8fd0;&#x884c;&#x5bb9;&#x5668;</strong>&#xff1a;&#x4f7f;&#x7528; <code>docker run</code> &#x547d;&#x4ee4;&#x521b;&#x5efa;&#x548c;&#x53d1;&#x5c55;&#x4e00;&#x4e2a; MySQL &#x5bb9;&#x5668;&#xff0c;&#x4f8b;&#x5982;&#xff1a;</p>\n<pre data-lines=\"24,27\"><code class=\"language-bash\">docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql\n</code></pre>","children":[],"payload":{"tag":"li","lines":"23,28"}},{"content":"\n<p data-lines=\"28,29\"><strong>&#x9009;&#x62e9;&#x7248;&#x672c;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x9009;&#x62e9;&#x4e0d;&#x540c;&#x7248;&#x672c;&#x7684; MySQL &#x6765;&#x6ee1;&#x8db3;&#x7279;&#x5b9a;&#x9700;&#x6c42;&#xff0c;&#x5982; MySQL 5.7&#x3001;8.0 &#x6216; 8.1&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"28,30"}},{"content":"\n<p data-lines=\"30,31\"><strong>&#x6301;&#x4e45;&#x5316;&#x6570;&#x636e;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x901a;&#x8fc7;&#x5c06; MySQL &#x6570;&#x636e;&#x76ee;&#x5f55;&#x6302;&#x8f7d;&#x5230; Docker &#x5377;&#x6765;&#x5b9e;&#x73b0;&#x6570;&#x636e;&#x7684;&#x6301;&#x4e45;&#x5316;&#x5b58;&#x50a8;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"19,20"}}]},null)</script>
+</body>
+</html>

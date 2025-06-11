@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css"><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"<pre data-lines=\"3,40\"><code class=\"language-markdown\"><span class=\"hljs-section\">### MySQL - &#x5173;&#x7cfb;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;</span>\n\nMySQL &#x662f;&#x4e00;&#x4e2a;&#x5f00;&#x6e90;&#x7684;&#x5173;&#x7cfb;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#xff0c;&#x7531;&#x745e;&#x5178; MySQL AB &#x516c;&#x53f8;&#x5f00;&#x53d1;&#xff0c;&#x76ee;&#x524d;&#x7531; Oracle Corporation &#x6301;&#x6709;&#x3002;&#x4ee5;&#x4e0b;&#x662f;&#x4e00;&#x4e9b;&#x5173;&#x4e8e; MySQL &#x7684;&#x4e3b;&#x8981;&#x7279;&#x70b9;&#xff1a;\n\n<span class=\"hljs-section\">#### &#x7279;&#x70b9;</span>\n\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x5f00;&#x6e90;**</span>&#xff1a;MySQL &#x662f;&#x514d;&#x8d39;&#x7684;&#xff0c;&#x4efb;&#x4f55;&#x4eba;&#x90fd;&#x53ef;&#x4ee5;&#x81ea;&#x7531;&#x4f7f;&#x7528;&#x3001;&#x4fee;&#x6539;&#x548c;&#x5206;&#x53d1;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x8de8;&#x5e73;&#x53f0;**</span>&#xff1a;&#x652f;&#x6301;&#x591a;&#x79cd;&#x64cd;&#x4f5c;&#x7cfb;&#x7edf;&#xff0c;&#x5305;&#x62ec; Windows&#x3001;Linux&#x3001;macOS &#x7b49;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x6570;&#x636e;&#x5b8c;&#x6574;&#x6027;**</span>&#xff1a;&#x63d0;&#x4f9b;&#x4e8b;&#x52a1;&#x652f;&#x6301;&#xff0c;&#x786e;&#x4fdd;&#x6570;&#x636e;&#x7684;&#x4e00;&#x81f4;&#x6027;&#x548c;&#x5b8c;&#x6574;&#x6027;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x9ad8;&#x6027;&#x80fd;**</span>&#xff1a;&#x7ecf;&#x8fc7;&#x4f18;&#x5316;&#x7684;&#x67e5;&#x8be2;&#x7f13;&#x5b58;&#x548c;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#xff0c;&#x63d0;&#x4f9b;&#x5feb;&#x901f;&#x7684;&#x6570;&#x636e;&#x8bbf;&#x95ee;&#x548c;&#x68c0;&#x7d22;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x6269;&#x5c55;&#x6027;**</span>&#xff1a;&#x652f;&#x6301;&#x5927;&#x91cf;&#x7684;&#x5e76;&#x53d1;&#x8fde;&#x63a5;&#xff0c;&#x5e76;&#x53ef;&#x4ee5;&#x901a;&#x8fc7;&#x6269;&#x5c55;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#x6765;&#x5904;&#x7406;&#x7279;&#x6b8a;&#x9700;&#x6c42;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x5e7f;&#x6cdb;&#x7684;&#x5e94;&#x7528;**</span>&#xff1a;&#x88ab;&#x5e7f;&#x6cdb;&#x5e94;&#x7528;&#x4e8e; Web &#x5e94;&#x7528;&#x3001;&#x4f01;&#x4e1a;&#x7cfb;&#x7edf;&#x548c;&#x5927;&#x6570;&#x636e;&#x5904;&#x7406;&#x7b49;&#x9886;&#x57df;&#x3002;\n\n<span class=\"hljs-section\">#### &#x4e3b;&#x8981;&#x7ec4;&#x4ef6;</span>\n\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**MySQL Shell**</span>&#xff1a;&#x7528;&#x4e8e;&#x8fdb;&#x884c;&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;&#x548c;&#x7ba1;&#x7406;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**MySQL Workbench**</span>&#xff1a;&#x4e00;&#x4e2a;&#x56fe;&#x5f62;&#x5316;&#x7684;&#x5de5;&#x5177;&#xff0c;&#x7528;&#x4e8e;&#x6570;&#x636e;&#x5e93;&#x8bbe;&#x8ba1;&#x548c;&#x5f00;&#x53d1;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**MySQL server**</span>&#xff1a;&#x6570;&#x636e;&#x5e93;&#x7684;&#x6838;&#x5fc3;&#xff0c;&#x8d1f;&#x8d23;&#x6570;&#x636e;&#x7684;&#x5b58;&#x50a8;&#x3001;&#x68c0;&#x7d22;&#x548c;&#x67e5;&#x8be2;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x5b58;&#x50a8;&#x5f15;&#x64ce;**</span>&#xff1a;&#x5305;&#x62ec; InnoDB&#x3001;MySQL&#x3001;MyISAM&#x3001;NDBCluster &#x7b49;&#xff0c;&#x6bcf;&#x4e2a;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#x90fd;&#x6709;&#x5176;&#x72ec;&#x7279;&#x7684;&#x6027;&#x80fd;&#x7279;&#x70b9;&#x3002;\n\n<span class=\"hljs-section\">#### &#x7528;&#x9014;</span>\n\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x67e5;&#x8be2;&#x64cd;&#x4f5c;**</span>&#xff1a;&#x6267;&#x884c; SQL &#x67e5;&#x8be2;&#xff0c;&#x5982; <span class=\"hljs-code\">`SELECT`</span>, <span class=\"hljs-code\">`INSERT`</span>, <span class=\"hljs-code\">`UPDATE`</span>, <span class=\"hljs-code\">`DELETE`</span> &#x7b49;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x6570;&#x636e;&#x7ba1;&#x7406;**</span>&#xff1a;&#x7ba1;&#x7406;&#x6570;&#x636e;&#x5e93;&#x6a21;&#x5f0f;&#xff08;&#x5982;&#x8868;&#x3001;&#x89c6;&#x56fe;&#xff09;&#x3001;&#x6570;&#x636e;&#x5b57;&#x5178;&#x548c;&#x5176;&#x4ed6;&#x6570;&#x636e;&#x5e93;&#x5bf9;&#x8c61;&#x3002;\n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-strong\">**&#x4e8b;&#x52a1;&#x7ba1;&#x7406;**</span>&#xff1a;&#x652f;&#x6301;&#x4e8b;&#x52a1;&#x7ba1;&#x7406;&#xff0c;&#x786e;&#x4fdd;&#x64cd;&#x4f5c;&#x7684;&#x4e00;&#x81f4;&#x6027;&#x548c;&#x539f;&#x5b50;&#x6027;&#x3002;\n\n<span class=\"hljs-section\">#### MySQL &#x4e0e; MyISAM</span>\n\n<span class=\"hljs-bullet\">-</span> MySQL &#x5185;&#x7f6e;&#x4e86;&#x591a;&#x79cd;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#xff0c;&#x5176;&#x4e2d; MyISAM &#x662f;&#x6700;&#x53e4;&#x8001;&#x7684;&#x5b58;&#x50a8;&#x5f15;&#x64ce;&#x4e4b;&#x4e00;&#x3002;\n<span class=\"hljs-bullet\">-</span> MyISAM &#x652f;&#x6301;&#x8868;&#x7ea7;&#x9501;&#x5b9a;&#x548c;&#x8bfb;&#x5199;&#x5206;&#x79bb;&#xff0c;&#x4f46;&#x901a;&#x5e38;&#x4e0d;&#x5982; InnoDB &#x652f;&#x6301;&#x4e8b;&#x52a1;&#x5904;&#x7406;&#x548c;&#x884c;&#x7ea7;&#x9501;&#x5b9a;&#x9ad8;&#x6548;&#x3002;\n<span class=\"hljs-bullet\">-</span> &#x201c;mysql[]&#x201d; &#x8bed;&#x6cd5;&#x901a;&#x5e38;&#x7528;&#x4e8e;&#x5728; MyISAM &#x4e2d;&#x5f15;&#x7528;&#x7279;&#x5b9a;&#x7684;&#x5217;&#x4f5c;&#x4e3a;&#x8986;&#x76d6;&#x7d22;&#x5f15;&#x3002;\n\n<span class=\"hljs-section\">#### &#x603b;&#x7ed3;</span>\n\nMySQL &#x662f;&#x4e00;&#x4e2a;&#x529f;&#x80fd;&#x5f3a;&#x5927;&#x7684;&#x5f00;&#x6e90;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#xff0c;&#x56e0;&#x5176;&#x53ef;&#x9760;&#x6027;&#x548c;&#x7075;&#x6d3b;&#x6027;&#x800c;&#x88ab;&#x5e7f;&#x6cdb;&#x5e94;&#x7528;&#x4e8e;&#x5404;&#x79cd;&#x89c4;&#x6a21;&#x7684;&#x9879;&#x76ee;&#x4e2d;&#x3002;\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"3,40"}},null)</script>
+</body>
+</html>

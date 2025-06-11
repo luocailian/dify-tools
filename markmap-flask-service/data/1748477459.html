@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"&#x9ad8;&#x53ef;&#x7528;&#x7684;&#x5b9a;&#x4e49;","children":[],"payload":{"tag":"h3","lines":"1,2"}},{"content":"&#x9ad8;&#x53ef;&#x7528;&#x6027;&#x5173;&#x952e;&#x7279;&#x6027;","children":[{"content":"<strong>&#x9ad8;&#x53ef;&#x7528;&#x6027; = ( uptime / total time ) &#xd7; 100</strong>%&#xff0c;&#x8861;&#x91cf;&#x7cfb;&#x7edf;&#x8fd0;&#x884c;&#x65f6;&#x95f4;&#x7684;&#x767e;&#x5206;&#x6bd4;&#x3002;","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"<strong>&#x5bb9;&#x9519;&#x6027;</strong>&#xff1a;&#x7cfb;&#x7edf;&#x80fd;&#x591f;&#x5904;&#x7406;&#x6545;&#x969c;&#x800c;&#x4e0d;&#x5f71;&#x54cd;&#x6574;&#x4f53;&#x6027;&#x80fd;&#x3002;","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"<strong>&#x6545;&#x969c;&#x8f6c;&#x79fb;</strong>&#xff1a;&#x5728;&#x68c0;&#x6d4b;&#x5230;&#x5931;&#x8d25;&#x65f6;&#xff0c;&#x7cfb;&#x7edf;&#x81ea;&#x52a8;&#x5207;&#x6362;&#x5230;&#x5907;&#x7528;&#x7ec4;&#x4ef6;&#x3002;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"<strong>&#x65e0;&#x7f1d;&#x707e;&#x96be;&#x6062;&#x590d;</strong>&#xff1a;&#x80fd;&#x591f;&#x4ece;&#x707e;&#x96be;&#x4e2d;&#x6062;&#x590d;&#xff0c;&#x5e76;&#x4fdd;&#x6301;&#x670d;&#x52a1;&#x8fde;&#x7eed;&#x6027;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h3","lines":"5,6"}},{"content":"&#x5b9e;&#x73b0;&#x9ad8;&#x53ef;&#x7528;&#x7684;&#x65b9;&#x6cd5;","children":[{"content":"<strong>&#x786c;&#x4ef6;&#x5197;&#x4f59;</strong>&#xff1a;&#x4f7f;&#x7528;&#x5197;&#x4f59;&#x7535;&#x6e90;&#x3001;&#x78c1;&#x76d8;&#x9635;&#x5217;&#x548c;&#x7f51;&#x7edc;&#x3002;","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<strong>&#x8f6f;&#x4ef6;&#x5197;&#x4f59;</strong>&#xff1a;&#x4f7f;&#x7528;&#x5907;&#x4efd;&#x8f6f;&#x4ef6;&#x3001;&#x96c6;&#x7fa4;&#x8f6f;&#x4ef6;&#x7b49;&#x3002;","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<strong>&#x8d1f;&#x8f7d;&#x5747;&#x8861;</strong>&#xff1a;&#x5206;&#x6563;&#x6d41;&#x91cf;&#x5230;&#x591a;&#x4e2a;&#x670d;&#x52a1;&#x5668;&#x3002;","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"<strong>&#x52a8;&#x6001;&#x8d44;&#x6e90;&#x7ba1;&#x7406;</strong>&#xff1a;&#x81ea;&#x52a8;&#x8c03;&#x6574;&#x8d44;&#x6e90;&#x4ee5;&#x5e94;&#x5bf9;&#x8d1f;&#x8f7d;&#x53d8;&#x5316;&#x3002;","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<strong>&#x76d1;&#x63a7;&#x548c;&#x544a;&#x8b66;&#x7cfb;&#x7edf;</strong>&#xff1a;&#x5b9e;&#x65f6;&#x76d1;&#x63a7;&#x670d;&#x52a1;&#x72b6;&#x6001;&#xff0c;&#x5e76;&#x5728;&#x95ee;&#x9898;&#x53d1;&#x751f;&#x65f6;&#x53ca;&#x65f6;&#x901a;&#x77e5;&#x7ba1;&#x7406;&#x5458;&#x3002;","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"h3","lines":"12,13"}},{"content":"&#x9ad8;&#x53ef;&#x7528;&#x6027;&#x4e0e;&#x76f8;&#x5173;&#x6307;&#x6807;","children":[{"content":"<strong>Mean Time To Failure (MTTF)</strong>&#xff1a;&#x7cfb;&#x7edf;&#x5e73;&#x5747;&#x6545;&#x969c;&#x524d;&#x65f6;&#x95f4;&#x3002;","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"<strong>Mean Time To Repair (MTTR)</strong>&#xff1a;&#x5e73;&#x5747;&#x4fee;&#x590d;&#x65f6;&#x95f4;&#x3002;","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"<strong>Service Level Agreements (SLAs)</strong>&#xff1a;&#x670d;&#x52a1;&#x7b49;&#x7ea7;&#x534f;&#x8bae;&#xff0c;&#x5b9a;&#x4e49;&#x670d;&#x52a1;&#x8d28;&#x91cf;&#x6807;&#x51c6;&#x3002;","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"h3","lines":"20,21"}},{"content":"&#x9ad8;&#x53ef;&#x7528;&#x6027;&#x7684;&#x5e94;&#x7528;&#x573a;&#x666f;","children":[{"content":"<strong>&#x5173;&#x952e;&#x4e1a;&#x52a1;&#x7cfb;&#x7edf;</strong>&#xff1a;&#x5982;&#x94f6;&#x884c;&#x4ea4;&#x6613;&#x7cfb;&#x7edf;&#x3001;&#x5728;&#x7ebf;&#x652f;&#x4ed8;&#x5e73;&#x53f0;&#x3002;","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"<strong>&#x4e92;&#x8054;&#x7f51;&#x670d;&#x52a1;</strong>&#xff1a;&#x5982;Web&#x670d;&#x52a1;&#x5668;&#x3001;&#x4e91;&#x670d;&#x52a1;&#x3002;","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"<strong>&#x5173;&#x952e;&#x57fa;&#x7840;&#x8bbe;&#x65bd;</strong>&#xff1a;&#x5982;&#x6570;&#x636e;&#x4e2d;&#x5fc3;&#x3001;&#x80fd;&#x6e90;&#x8bbe;&#x65bd;&#x3002;","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"26,27"}},{"content":"&#x7ed3;&#x8bba;","children":[],"payload":{"tag":"h3","lines":"32,33"}}]},null)</script>
+</body>
+</html>

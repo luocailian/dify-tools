@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"Jenkins&#x6982;&#x8ff0;","children":[{"content":"<strong>&#x5b9a;&#x4e49;</strong>&#xff1a;Jenkins&#x662f;&#x4e00;&#x4e2a;&#x5f3a;&#x5927;&#x7684;&#x81ea;&#x52a8;&#x5316;&#x5e73;&#x53f0;&#xff0c;&#x53ef;&#x4ee5;&#x5e2e;&#x52a9;&#x5f00;&#x53d1;&#x8005;&#x81ea;&#x52a8;&#x5316;&#x5730;&#x6267;&#x884c;&#x6784;&#x5efa;&#x3001;&#x6d4b;&#x8bd5;&#x548c;&#x90e8;&#x7f72;&#x4efb;&#x52a1;&#x3002;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<strong>&#x6838;&#x5fc3;&#x529f;&#x80fd;</strong>&#xff1a;","children":[{"content":"&#x6784;&#x5efa;&#x9879;&#x76ee;&#xff1a;&#x81ea;&#x52a8;&#x5316;&#x6784;&#x5efa;&#x8f6f;&#x4ef6;&#x5305;&#xff0c;&#x5982;WAR&#x3001;JAR&#x6216;ZIP&#x6587;&#x4ef6;&#x3002;","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"&#x6d4b;&#x8bd5;&#x4ee3;&#x7801;&#xff1a;&#x6267;&#x884c;&#x5355;&#x5143;&#x6d4b;&#x8bd5;&#x3001;&#x96c6;&#x6210;&#x6d4b;&#x8bd5;&#x548c;&#x529f;&#x80fd;&#x6d4b;&#x8bd5;&#x3002;","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"&#x90e8;&#x7f72;&#x5e94;&#x7528;&#xff1a;&#x81ea;&#x52a8;&#x5316;&#x90e8;&#x7f72;&#x5e94;&#x7528;&#x5230;&#x670d;&#x52a1;&#x5668;&#x3001;&#x4e91;&#x5e73;&#x53f0;&#x6216;&#x5176;&#x4ed6;&#x73af;&#x5883;&#x3002;","children":[],"payload":{"tag":"li","lines":"8,9"}}],"payload":{"tag":"li","lines":"5,9"}},{"content":"<strong>&#x67b6;&#x6784;</strong>&#xff1a;","children":[{"content":"Jenkins&#x4e3b;&#x8981;&#x5305;&#x542b;&#x4e00;&#x4e2a;&#x6838;&#x5fc3;&#x670d;&#x52a1;&#x548c;&#x82e5;&#x5e72;&#x63d2;&#x4ef6;&#x3002;&#x63d2;&#x4ef6;&#x6269;&#x5c55;&#x4e86;Jenkins&#x7684;&#x529f;&#x80fd;&#xff0c;&#x4f7f;&#x5176;&#x80fd;&#x591f;&#x652f;&#x6301;&#x5404;&#x79cd;&#x4e0d;&#x540c;&#x7684;&#x73af;&#x5883;&#x548c;&#x6280;&#x672f;&#x6808;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,11"}}],"payload":{"tag":"li","lines":"9,11"}},{"content":"<strong>&#x5de5;&#x4f5c;&#x6d41;&#x7a0b;</strong>&#xff1a;","children":[{"content":"&#x7528;&#x6237;&#x5b9a;&#x4e49;&#x4efb;&#x52a1;&#xff08;&#x901a;&#x5e38;&#x79f0;&#x4e3a;&#x201c;Job&#x201d;&#xff09;&#xff0c;Jenkins&#x6309;&#x7167;&#x8fd9;&#x4e9b;&#x4efb;&#x52a1;&#x7684;&#x89c4;&#x5219;&#x81ea;&#x52a8;&#x6267;&#x884c;&#x3002;","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"&#x4efb;&#x52a1;&#x53ef;&#x4ee5;&#x57fa;&#x4e8e;&#x4ee3;&#x7801;&#x63d0;&#x4ea4;&#xff08;&#x6301;&#x7eed;&#x96c6;&#x6210;&#xff09;&#x6216;&#x5b9a;&#x65f6;&#xff08;&#x5b9a;&#x65f6;&#x6267;&#x884c;&#xff09;&#x6765;&#x89e6;&#x53d1;&#x3002;","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"li","lines":"11,15"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"Jenkins&#x7684;&#x4f18;&#x52bf;","children":[{"content":"<strong>&#x7075;&#x6d3b;&#x6027;&#x548c;&#x53ef;&#x6269;&#x5c55;&#x6027;</strong>&#xff1a;&#x901a;&#x8fc7;&#x4e30;&#x5bcc;&#x7684;&#x63d2;&#x4ef6;&#x751f;&#x6001;&#x7cfb;&#x7edf;&#xff0c;Jenkins&#x53ef;&#x4ee5;&#x9002;&#x5e94;&#x51e0;&#x4e4e;&#x4efb;&#x4f55;&#x81ea;&#x52a8;&#x5316;&#x9700;&#x6c42;&#x3002;","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"<strong>&#x6613;&#x4e8e;&#x4f7f;&#x7528;</strong>&#xff1a;Jenkins&#x63d0;&#x4f9b;&#x4e86;&#x4e00;&#x4e2a;&#x76f4;&#x89c2;&#x7684;&#x7528;&#x6237;&#x754c;&#x9762;&#xff0c;&#x5373;&#x4f7f;&#x6ca1;&#x6709;&#x592a;&#x591a;&#x81ea;&#x52a8;&#x5316;&#x7ecf;&#x9a8c;&#x7684;&#x7528;&#x6237;&#x4e5f;&#x53ef;&#x4ee5;&#x5feb;&#x901f;&#x4e0a;&#x624b;&#x3002;","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<strong>&#x652f;&#x6301;&#x591a;&#x79cd;&#x6280;&#x672f;</strong>&#xff1a;Jenkins&#x53ef;&#x4ee5;&#x4e0e;&#x591a;&#x79cd;&#x5f00;&#x53d1;&#x3001;&#x6d4b;&#x8bd5;&#x548c;&#x90e8;&#x7f72;&#x5de5;&#x5177;&#x96c6;&#x6210;&#xff0c;&#x5982;Git&#x3001;Maven&#x3001;Selenium&#x7b49;&#x3002;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<strong>&#x793e;&#x533a;&#x652f;&#x6301;</strong>&#xff1a;&#x4f5c;&#x4e3a;&#x4e00;&#x4e2a;&#x5f00;&#x6e90;&#x9879;&#x76ee;&#xff0c;Jenkins&#x62e5;&#x6709;&#x4e00;&#x4e2a;&#x6d3b;&#x8dc3;&#x7684;&#x793e;&#x533a;&#xff0c;&#x53ef;&#x4ee5;&#x63d0;&#x4f9b;&#x5e2e;&#x52a9;&#x548c;&#x8d44;&#x6e90;&#x3002;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"&#x5e94;&#x7528;&#x573a;&#x666f;","children":[{"content":"<strong>&#x654f;&#x6377;&#x5f00;&#x53d1;</strong>&#xff1a;Jenkins&#x53ef;&#x4ee5;&#x5e2e;&#x52a9;&#x654f;&#x6377;&#x56e2;&#x961f;&#x5feb;&#x901f;&#x8fed;&#x4ee3;&#xff0c;&#x53ca;&#x65f6;&#x53cd;&#x9988;&#x3002;","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"<strong>DevOps</strong>&#xff1a;Jenkins&#x662f;DevOps&#x5b9e;&#x8df5;&#x4e2d;&#x7684;&#x5173;&#x952e;&#x5de5;&#x5177;&#xff0c;&#x6709;&#x52a9;&#x4e8e;&#x5b9e;&#x73b0;&#x5feb;&#x901f;&#x3001;&#x53ef;&#x9760;&#x7684;&#x8f6f;&#x4ef6;&#x4ea4;&#x4ed8;&#x3002;","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"<strong>&#x81ea;&#x52a8;&#x5316;&#x6d4b;&#x8bd5;</strong>&#xff1a;&#x901a;&#x8fc7;&#x81ea;&#x52a8;&#x5316;&#x6d4b;&#x8bd5;&#xff0c;Jenkins&#x53ef;&#x4ee5;&#x63d0;&#x9ad8;&#x6d4b;&#x8bd5;&#x6548;&#x7387;&#x548c;&#x8d28;&#x91cf;&#x3002;","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"h3","lines":"21,22"}}]},null)</script>
+</body>
+</html>

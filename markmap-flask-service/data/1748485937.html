@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"1. \n<p data-lines=\"3,4\"><strong>&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#xff08;DBMS&#xff09;</strong>&#xff1a;</p>","children":[{"content":"MySQL&#x662f;&#x4e00;&#x79cd;&#x5f00;&#x6e90;&#x7684;&#x5173;&#x7cfb;&#x578b;&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#xff0c;&#x5b83;&#x4f7f;&#x7528;&#x7ed3;&#x6784;&#x5316;&#x67e5;&#x8be2;&#x8bed;&#x8a00;&#xff08;SQL&#xff09;&#x8fdb;&#x884c;&#x6570;&#x636e;&#x7684;&#x5b58;&#x50a8;&#x3001;&#x68c0;&#x7d22;&#x548c;&#x7ba1;&#x7406;&#x3002;MySQL&#x7531;MySQL AB&#x516c;&#x53f8;&#x5f00;&#x53d1;&#xff0c;&#x73b0;&#x5728;&#x662f;Oracle&#x516c;&#x53f8;&#x7684;&#x4e00;&#x90e8;&#x5206;&#x3002;","children":[],"payload":{"tag":"li","lines":"4,6"}}],"payload":{"tag":"li","lines":"3,6","listIndex":1}},{"content":"2. \n<p data-lines=\"6,7\"><strong>MySQL&#x670d;&#x52a1;&#x5668;</strong>&#xff1a;</p>","children":[{"content":"&#x6307;&#x7684;&#x662f;&#x8fd0;&#x884c;MySQL&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;&#x7cfb;&#x7edf;&#x7684;&#x8f6f;&#x4ef6;&#x5b9e;&#x4f8b;&#x3002;&#x8fd9;&#x4e2a;&#x670d;&#x52a1;&#x5668;&#x53ef;&#x4ee5;&#x5b58;&#x50a8;&#x6570;&#x636e;&#x548c;&#x5143;&#x6570;&#x636e;&#xff0c;&#x5e76;&#x5141;&#x8bb8;&#x7528;&#x6237;&#x548c;&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x8bbf;&#x95ee;&#x548c;&#x7ba1;&#x7406;&#x8fd9;&#x4e9b;&#x6570;&#x636e;&#x3002;","children":[],"payload":{"tag":"li","lines":"7,9"}}],"payload":{"tag":"li","lines":"6,9","listIndex":2}},{"content":"3. \n<p data-lines=\"9,10\"><strong>MySQL&#x6570;&#x636e;&#x5e93;</strong>&#xff1a;</p>","children":[{"content":"&#x6307;&#x7684;&#x662f;&#x4e00;&#x4e2a;&#x7531;MySQL&#x670d;&#x52a1;&#x5668;&#x7ba1;&#x7406;&#x7684;&#x5177;&#x4f53;&#x6570;&#x636e;&#x5e93;&#x6587;&#x4ef6;&#x96c6;&#x5408;&#xff0c;&#x5305;&#x542b;&#x4e00;&#x4e2a;&#x6216;&#x591a;&#x4e2a;&#x6570;&#x636e;&#x5e93;&#x8868;&#xff0c;&#x7528;&#x4e8e;&#x5b58;&#x50a8;&#x4fe1;&#x606f;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"li","lines":"9,12","listIndex":3}},{"content":"4. \n<p data-lines=\"12,13\"><strong>MySQL&#x5ba2;&#x6237;&#x7aef;&#x5de5;&#x5177;</strong>&#xff1a;</p>","children":[{"content":"&#x5305;&#x62ec;&#x7528;&#x4e8e;&#x4e0e;MySQL&#x670d;&#x52a1;&#x5668;&#x4ea4;&#x4e92;&#x7684;&#x5404;&#x79cd;&#x547d;&#x4ee4;&#x884c;&#x5de5;&#x5177;&#x548c;&#x56fe;&#x5f62;&#x7528;&#x6237;&#x754c;&#x9762;&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x3002;&#x8fd9;&#x4e9b;&#x5de5;&#x5177;&#x53ef;&#x4ee5;&#x7528;&#x4e8e;&#x6267;&#x884c;SQL&#x67e5;&#x8be2;&#x3001;&#x7ba1;&#x7406;&#x6570;&#x636e;&#x5e93;&#x4ee5;&#x53ca;&#x8fdb;&#x884c;&#x5176;&#x4ed6;&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;&#x3002;","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"li","lines":"12,15","listIndex":4}},{"content":"5. \n<p data-lines=\"15,16\"><strong>MySQL&#x8fde;&#x63a5;&#x5b57;&#x7b26;&#x4e32;</strong>&#xff1a;</p>","children":[{"content":"&#x5728;&#x7f16;&#x7a0b;&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x6216;&#x811a;&#x672c;&#x4e2d;&#xff0c;MySQL&#x8fde;&#x63a5;&#x5b57;&#x7b26;&#x4e32;&#x662f;&#x4e00;&#x4e2a;&#x7528;&#x4e8e;&#x6307;&#x5b9a;&#x4e0e;MySQL&#x670d;&#x52a1;&#x5668;&#x8fde;&#x63a5;&#x6240;&#x9700;&#x4fe1;&#x606f;&#x7684;&#x53c2;&#x6570;&#x96c6;&#x5408;&#xff0c;&#x901a;&#x5e38;&#x5305;&#x542b;&#x4e3b;&#x673a;&#x540d;&#x3001;&#x7aef;&#x53e3;&#x53f7;&#x3001;&#x6570;&#x636e;&#x5e93;&#x540d;&#x3001;&#x7528;&#x6237;&#x540d;&#x548c;&#x5bc6;&#x7801;&#x3002;","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"li","lines":"15,18","listIndex":5}},{"content":"6. \n<p data-lines=\"18,19\"><strong>MySQL API&#x548c;&#x5e93;</strong>&#xff1a;</p>","children":[{"content":"&#x8fd9;&#x4e9b;&#x662f;&#x5141;&#x8bb8;&#x5176;&#x4ed6;&#x7f16;&#x7a0b;&#x8bed;&#x8a00;&#xff08;&#x5982;Python&#x3001;Java&#x3001;C++&#x7b49;&#xff09;&#x7684;&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x4e0e;MySQL&#x6570;&#x636e;&#x5e93;&#x8fdb;&#x884c;&#x4ea4;&#x4e92;&#x7684;API&#x548c;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"li","lines":"18,21","listIndex":6}}],"payload":{"tag":"ol","lines":"3,21"}},null)</script>
+</body>
+</html>

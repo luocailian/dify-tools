@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css"><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"1. <strong>MySQL &#x914d;&#x7f6e;&#x6587;&#x4ef6;&#x4e2d;&#x7684;&#x7ed3;&#x6784;</strong>","children":[{"content":"<pre data-lines=\"7,12\"><code class=\"language-ini\"><span class=\"hljs-section\">[mysql]</span>\n<span class=\"hljs-attr\">host</span>=localhost\n<span class=\"hljs-attr\">port</span>=<span class=\"hljs-number\">3306</span>\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"7,12"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"2. <strong>MySQL &#x6269;&#x5c55;&#x5e93;&#x4e2d;&#x7684;&#x5f15;&#x7528;</strong>","children":[{"content":"<pre data-lines=\"18,28\"><code class=\"language-php\"><span class=\"hljs-variable\">&#x24;settings</span> = <span class=\"hljs-keyword\">array</span>(\n    <span class=\"hljs-string\">&apos;mysql&apos;</span> =&gt; <span class=\"hljs-keyword\">array</span>(\n        <span class=\"hljs-string\">&apos;host&apos;</span> =&gt; <span class=\"hljs-string\">&apos;localhost&apos;</span>,\n        <span class=\"hljs-string\">&apos;port&apos;</span> =&gt; <span class=\"hljs-number\">3306</span>,\n        <span class=\"hljs-string\">&apos;user&apos;</span> =&gt; <span class=\"hljs-string\">&apos;root&apos;</span>,\n        <span class=\"hljs-string\">&apos;password&apos;</span> =&gt; <span class=\"hljs-string\">&apos;password&apos;</span>\n    )\n);\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"18,28"}}],"payload":{"tag":"h3","lines":"14,15"}},{"content":"3. <strong>MySQL &#x5ba2;&#x6237;&#x7aef;&#x6216;&#x811a;&#x672c;&#x4e2d;&#x7684;&#x4f7f;&#x7528;</strong>","children":[{"content":"<pre data-lines=\"34,39\"><code class=\"language-bash\"><span class=\"hljs-meta\">#!/bin/bash</span>\nmysql[]password=&#x24;(<span class=\"hljs-built_in\">read</span> -p <span class=\"hljs-string\">&quot;Enter MySQL root password: &quot;</span> password)\nmysql -u root -p<span class=\"hljs-string\">&quot;<span class=\"hljs-variable\">&#x24;password</span>&quot;</span> -e <span class=\"hljs-string\">&quot;SHOW DATABASES;&quot;</span>\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"34,39"}}],"payload":{"tag":"h3","lines":"30,31"}},{"content":"4. <strong>&#x9519;&#x8bef;&#x6216;&#x4e0d;&#x6b63;&#x786e;&#x7684;&#x7528;&#x6cd5;</strong>","children":[],"payload":{"tag":"h3","lines":"41,42"}}]},null)</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"\n<p data-lines=\"5,6\"><strong>&#x7528;&#x9014;</strong>&#xff1a;&#x8fd9;&#x4e2a;&#x7b26;&#x53f7;&#x4e3b;&#x8981;&#x7528;&#x4e8e;&#x547d;&#x4ee4;&#x884c;&#x754c;&#x9762;&#x4e2d;&#xff0c;&#x63d0;&#x793a;&#x7528;&#x6237;&#x5f53;&#x524d;&#x6ca1;&#x6709;&#x4efb;&#x4f55;&#x5ba2;&#x6237;&#x7aef;&#x8fde;&#x63a5;&#x5230;MySQL&#x670d;&#x52a1;&#x5668;&#xff0c;&#x56e0;&#x6b64;&#x670d;&#x52a1;&#x5668;&#x662f;&#x7a7a;&#x95f2;&#x7684;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"5,7"}},{"content":"\n<p data-lines=\"7,8\"><strong>&#x51fa;&#x73b0;&#x573a;&#x666f;</strong>&#xff1a;&#x901a;&#x5e38;&#x5728;&#x7528;&#x6237;&#x5c1d;&#x8bd5;&#x8fde;&#x63a5;&#x5230;&#x4e00;&#x4e2a;&#x6ca1;&#x6709;&#x8fd0;&#x884c;&#x4efb;&#x4f55;&#x67e5;&#x8be2;&#x7684;MySQL&#x670d;&#x52a1;&#x5668;&#x65f6;&#x51fa;&#x73b0;&#x3002;&#x5b83;&#x4e5f;&#x53ef;&#x80fd;&#x5728;&#x5b89;&#x88c5;&#x6216;&#x914d;&#x7f6e;MySQL&#x65f6;&#x4f5c;&#x4e3a;&#x53c2;&#x6570;&#x9009;&#x9879;&#x51fa;&#x73b0;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"7,9"}},{"content":"\n<p data-lines=\"9,10\"><strong>&#x5173;&#x8054;&#x547d;&#x4ee4;</strong>&#xff1a;&#x5728;MySQL&#x547d;&#x4ee4;&#x884c;&#x5de5;&#x5177;&#x4e2d;&#xff0c;&#x5982;<code>mysqldump</code>&#x6216;<code>mysqlbinutils</code>&#xff0c;&#x6ca1;&#x6709;&#x76f4;&#x63a5;&#x4f7f;&#x7528;&#x201c;mysql[]&#x201d;&#x7684;&#x6982;&#x5ff5;&#x3002;&#x8fd9;&#x4e2a;&#x7b26;&#x53f7;&#x66f4;&#x591a;&#x662f;&#x4e0e;&#x547d;&#x4ee4;&#x884c;&#x8fde;&#x63a5;&#x65f6;&#x7684;&#x72b6;&#x6001;&#x63d0;&#x793a;&#x76f8;&#x5173;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"9,11"}},{"content":"\n<p data-lines=\"11,12\"><strong>&#x914d;&#x7f6e;&#x6587;&#x4ef6;</strong>&#xff1a;&#x5728;MySQL&#x7684;&#x914d;&#x7f6e;&#x6587;&#x4ef6;&#xff08;&#x901a;&#x5e38;&#x4e3a;<code>mysql.cnf</code>&#x6216;<code>my.ini</code>&#xff09;&#x4e2d;&#xff0c;&#x4e5f;&#x53ef;&#x80fd;&#x4f1a;&#x770b;&#x5230;&#x4e0e;&#x7a7a;&#x95f2;&#x72b6;&#x6001;&#x76f8;&#x5173;&#x7684;&#x8bbe;&#x7f6e;&#xff0c;&#x4f46;&#x8fd9;&#x4e9b;&#x8bbe;&#x7f6e;&#x5e76;&#x4e0d;&#x662f;&#x901a;&#x8fc7;&#x201c;mysql[]&#x201d;&#x6765;&#x6807;&#x8bc6;&#x7684;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"11,13"}},{"content":"\n<p data-lines=\"13,14\"><strong>&#x7248;&#x672c;&#x53d8;&#x5316;</strong>&#xff1a;&#x968f;&#x7740;MySQL&#x7248;&#x672c;&#x7684;&#x66f4;&#x65b0;&#xff0c;&#x7279;&#x522b;&#x662f;&#x5728;MySQL 5.7&#x4ee5;&#x540e;&#xff0c;&#x8fd9;&#x4e2a;&#x7b26;&#x53f7;&#x4e0d;&#x518d;&#x88ab;&#x4f7f;&#x7528;&#x3002;&#x65b0;&#x7684;&#x7248;&#x672c;&#x63d0;&#x4f9b;&#x4e86;&#x66f4;&#x52a0;&#x76f4;&#x89c2;&#x548c;&#x53cb;&#x597d;&#x7684;&#x7528;&#x6237;&#x754c;&#x9762;&#xff0c;&#x4f7f;&#x5f97;&#x7528;&#x6237;&#x53ef;&#x4ee5;&#x66f4;&#x5bb9;&#x6613;&#x5730;&#x4e86;&#x89e3;&#x670d;&#x52a1;&#x5668;&#x7684;&#x72b6;&#x6001;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"ul","lines":"5,15"}},null)</script>
+</body>
+</html>

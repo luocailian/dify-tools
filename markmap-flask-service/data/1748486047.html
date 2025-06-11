@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css"><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"1. &#x547d;&#x4ee4;&#x884c;&#x63d0;&#x793a;&#x7b26;","children":[],"payload":{"tag":"h3","lines":"3,4"}},{"content":"2. MySQL &#x914d;&#x7f6e;&#x9009;&#x9879;","children":[],"payload":{"tag":"h3","lines":"6,7"}},{"content":"3. MySQL &#x5b89;&#x88c5;&#x5305;&#x6216;&#x76ee;&#x5f55;","children":[],"payload":{"tag":"h3","lines":"9,10"}},{"content":"4. MySQL &#x670d;&#x52a1;&#x6216;&#x8fdb;&#x7a0b;","children":[],"payload":{"tag":"h3","lines":"12,13"}},{"content":"5. &#x9519;&#x8bef;&#x6216;&#x6df7;&#x6dc6;","children":[{"content":"\n<p data-lines=\"20,21\"><strong>&#x5982;&#x679c;&#x60a8;&#x662f;&#x5728;&#x8be2;&#x95ee;&#x5982;&#x4f55;&#x8fde;&#x63a5;&#x5230; MySQL</strong>&#xff1a;&#x53ef;&#x4ee5;&#x4f7f;&#x7528;&#x4ee5;&#x4e0b;&#x547d;&#x4ee4;&#x8fde;&#x63a5;&#x5230; MySQL&#xff1a;</p>\n<pre data-lines=\"21,24\"><code class=\"language-bash\">mysql -u root -p\n</code></pre>\n<p data-lines=\"24,25\">&#x63a5;&#x7740;&#xff0c;&#x60a8;&#x4f1a;&#x770b;&#x5230; <code>mysql&gt;</code> &#x63d0;&#x793a;&#x7b26;&#xff0c;&#x53ef;&#x4ee5;&#x5f00;&#x59cb;&#x6267;&#x884c; SQL &#x547d;&#x4ee4;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"20,26"}},{"content":"\n<p data-lines=\"26,27\"><strong>&#x5982;&#x679c;&#x60a8;&#x662f;&#x5728;&#x5bfb;&#x6c42;&#x914d;&#x7f6e;&#x5e2e;&#x52a9;</strong>&#xff1a;&#x901a;&#x5e38;&#xff0c;MySQL &#x7684;&#x914d;&#x7f6e;&#x9009;&#x9879;&#x4f1a;&#x5728;&#x914d;&#x7f6e;&#x6587;&#x4ef6;&#xff08;&#x5982; <code>my.cnf</code> &#x6216; <code>my.ini</code>&#xff09;&#x4e2d;&#x6307;&#x5b9a;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"26,28"}},{"content":"\n<p data-lines=\"28,29\"><strong>&#x5982;&#x679c;&#x60a8;&#x662f;&#x5728;&#x5904;&#x7406;&#x9519;&#x8bef;&#x4fe1;&#x606f;</strong>&#xff1a;&#x9700;&#x8981;&#x6839;&#x636e;&#x5177;&#x4f53;&#x7684;&#x9519;&#x8bef;&#x4fe1;&#x606f;&#x8fdb;&#x884c;&#x6392;&#x67e5;&#x3002;</p>","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h3","lines":"15,16"}}]},null)</script>
+</body>
+</html>

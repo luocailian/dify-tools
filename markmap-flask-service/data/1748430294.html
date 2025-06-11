@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css"><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"&#x5b9a;&#x4e49;","children":[],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x4e3b;&#x8981;&#x529f;&#x80fd;","children":[{"content":"<strong>&#x8fde;&#x63a5;&#x6570;&#x636e;&#x5e93;</strong>&#xff1a;&#x4f7f;&#x7528; <code>mysql</code> &#x547d;&#x4ee4;&#x53ef;&#x4ee5;&#x8fde;&#x63a5;&#x5230;MySQL&#x670d;&#x52a1;&#x5668;&#xff0c;&#x5e76;&#x8fdb;&#x884c;&#x5404;&#x79cd;&#x6570;&#x636e;&#x5e93;&#x64cd;&#x4f5c;&#x3002;","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"<strong>&#x6267;&#x884c;SQL&#x547d;&#x4ee4;</strong>&#xff1a;&#x5141;&#x8bb8;&#x7528;&#x6237;&#x5728;MySQL&#x670d;&#x52a1;&#x5668;&#x4e0a;&#x6267;&#x884c;SQL&#x8bed;&#x53e5;&#xff0c;&#x5982;&#x521b;&#x5efa;&#x3001;&#x4fee;&#x6539;&#x3001;&#x5220;&#x9664;&#x6570;&#x636e;&#x5e93;&#x7ed3;&#x6784;&#xff0c;&#x4ee5;&#x53ca;&#x67e5;&#x8be2;&#x548c;&#x66f4;&#x65b0;&#x6570;&#x636e;&#x3002;","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"<strong>&#x5907;&#x4efd;&#x548c;&#x8fd8;&#x539f;</strong>&#xff1a;&#x4f7f;&#x7528; <code>mysqldump</code>&#xff08;&#x4e0d;&#x662f; <code>mysql</code> &#x547d;&#x4ee4;&#x672c;&#x8eab;&#xff09;&#x7b49;&#x5de5;&#x5177;&#x53ef;&#x4ee5;&#x5907;&#x4efd;&#x548c;&#x8fd8;&#x539f;MySQL&#x6570;&#x636e;&#x5e93;&#x3002;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"<strong>&#x6570;&#x636e;&#x5e93;&#x7ba1;&#x7406;</strong>&#xff1a;&#x5305;&#x62ec;&#x66f4;&#x6539;&#x7528;&#x6237;&#x6743;&#x9650;&#x3001;&#x4f18;&#x5316;&#x6570;&#x636e;&#x5e93;&#x6027;&#x80fd;&#x3001;&#x5206;&#x6790;&#x6570;&#x636e;&#x5e93;&#x7edf;&#x8ba1;&#x4fe1;&#x606f;&#x7b49;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h3","lines":"6,7"}},{"content":"&#x4f7f;&#x7528;&#x65b9;&#x5f0f;","children":[{"content":"<strong>&#x57fa;&#x672c;&#x8fde;&#x63a5;</strong>&#xff1a;&#x8981;&#x8fde;&#x63a5;&#x5230;MySQL&#x670d;&#x52a1;&#x5668;&#xff0c;&#x901a;&#x5e38;&#x4f7f;&#x7528;&#x4ee5;&#x4e0b;&#x547d;&#x4ee4;&#xff1a;<pre data-lines=\"14,17\"><code class=\"language-bash\">mysql -u username -p\n</code></pre>\n&#x8f93;&#x5165;&#x5bc6;&#x7801;&#x540e;&#xff0c;&#x5c06;&#x8fdb;&#x5165;MySQL&#x547d;&#x4ee4;&#x884c;&#x5ba2;&#x6237;&#x7aef;&#x3002;","children":[],"payload":{"tag":"li","lines":"13,18"}},{"content":"<strong>&#x6570;&#x636e;&#x64cd;&#x4f5c;</strong>&#xff1a;&#x5728;&#x5ba2;&#x6237;&#x7aef;&#x4e2d;&#xff0c;&#x53ef;&#x4ee5;&#x6267;&#x884c;SQL&#x547d;&#x4ee4;&#xff0c;&#x4f8b;&#x5982;&#xff1a;<pre data-lines=\"19,25\"><code class=\"language-sql\"><span class=\"hljs-keyword\">CREATE</span> DATABASE new_db;\nUSE new_db;\n<span class=\"hljs-keyword\">CREATE TABLE</span> test (id <span class=\"hljs-type\">INT</span> <span class=\"hljs-keyword\">PRIMARY KEY</span>);\n<span class=\"hljs-keyword\">INSERT INTO</span> test (id) <span class=\"hljs-keyword\">VALUES</span> (<span class=\"hljs-number\">1</span>);\n</code></pre>","children":[],"payload":{"tag":"li","lines":"18,25"}},{"content":"<strong>&#x6267;&#x884c;&#x811a;&#x672c;</strong>&#xff1a;&#x53ef;&#x4ee5;&#x901a;&#x8fc7; <code>-e</code> &#x9009;&#x9879;&#x6267;&#x884c;SQL&#x811a;&#x672c;&#x6587;&#x4ef6;&#xff1a;<pre data-lines=\"26,29\"><code class=\"language-bash\">mysql -u username -p -e <span class=\"hljs-string\">&quot;SHOW TABLES;&quot;</span> database_name\n</code></pre>","children":[],"payload":{"tag":"li","lines":"25,30"}}],"payload":{"tag":"h3","lines":"12,13"}},{"content":"&#x7279;&#x6b8a;&#x60c5;&#x51b5;","children":[{"content":"<strong><code>mysql[]</code> &#x63d0;&#x793a;</strong>&#xff1a;&#x5982;&#x524d;&#x6240;&#x8ff0;&#xff0c;&#x9047;&#x5230; <code>mysql[]</code> &#x63d0;&#x793a;&#x901a;&#x5e38;&#x610f;&#x5473;&#x7740;&#x5bc6;&#x7801;&#x4e3a;&#x7a7a;&#xff0c;&#x7cfb;&#x7edf;&#x8981;&#x6c42;&#x8f93;&#x5165;&#x6570;&#x636e;&#x5e93;&#x540d;&#x3002;","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"<strong>&#x8fdc;&#x7a0b;&#x8fde;&#x63a5;</strong>&#xff1a;&#x8fde;&#x63a5;&#x8fdc;&#x7a0b;MySQL&#x670d;&#x52a1;&#x5668;&#x65f6;&#xff0c;&#x901a;&#x5e38;&#x9700;&#x8981;&#x63d0;&#x4f9b;&#x4e3b;&#x673a;&#x540d;&#x3001;&#x7aef;&#x53e3;&#x548c;&#x5bc6;&#x7801;&#x3002;","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h3","lines":"30,31"}}]},null)</script>
+</body>
+</html>

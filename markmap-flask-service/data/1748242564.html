@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css"><link rel="stylesheet" href="https://unpkg.com/katex@0.16.18/dist/katex.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap) => {
+          window.WebFontConfig = {
+            custom: {
+              families: [
+                "KaTeX_AMS",
+                "KaTeX_Caligraphic:n4,n7",
+                "KaTeX_Fraktur:n4,n7",
+                "KaTeX_Main:n4,n7,i4,i7",
+                "KaTeX_Math:i4,i7",
+                "KaTeX_Script",
+                "KaTeX_SansSerif:n4,n7,i4",
+                "KaTeX_Size1",
+                "KaTeX_Size2",
+                "KaTeX_Size3",
+                "KaTeX_Size4",
+                "KaTeX_Typewriter"
+              ]
+            },
+            active: () => {
+              getMarkmap().refreshHook.call();
+            }
+          };
+        })(() => window.markmap)</script><script src="https://unpkg.com/webfontloader@1.6.28/webfontloader.js" defer></script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[]},null)</script>
+</body>
+</html>
