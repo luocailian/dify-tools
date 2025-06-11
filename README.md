@@ -59,8 +59,8 @@ Our PR Visual Regression Testing is powered by [Argos](https://argos-ci.com/?utm
 #### mermaid使用指南
 
 1. 切换到mermaid-flask-service目录下
-2. 构建docker镜像：docker build -t mermaid-flask-service：latest . 
-3. 启动容器： docker run -d --name mermaid-flask-service -p 5002:5002 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default mermaid-flask-service:latest
+2. 构建docker镜像：`docker build -t mermaid-flask-service：latest . `
+3. 启动容器： `docker run -d --name mermaid-flask-service -p 5002:5002 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default mermaid-flask-service:latest`
            
 		   参数释义： --network 指定网络，这里必须一致因为dify是这两个网络，后续需要通信
 4. 在dify中导入mermaid作图工具.yml和mermaid_agent.yml
