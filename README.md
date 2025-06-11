@@ -61,7 +61,8 @@ Our PR Visual Regression Testing is powered by [Argos](https://argos-ci.com/?utm
 1. 切换到mermaid-flask-service目录下
 2. 构建docker镜像：docker build -t mermaid-flask-service：latest . 
 3. 启动容器： docker run -d --name mermaid-flask-service -p 5002:5002 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default mermaid-flask-service:latest
-            参数释义： --network 指定网络，这里必须一致因为dify是这两个网络，后续需要通信
+           
+		   参数释义： --network 指定网络，这里必须一致因为dify是这两个网络，后续需要通信
 4. 在dify中导入mermaid作图工具.yml和mermaid_agent.yml
    - 把mermaid作图工具创建出来的工作流发布为工具mermaid_service，并描述设置为"save mermain content and get svg url"
    - 在mermaid_agent中引用该工具mermaid_service
@@ -221,8 +222,11 @@ Marp ecosystem has a lot of cool stuffs for making awesome presentation. Check o
 #### marp使用指南
 
 1. 切换到marp-flask-service目录下
+
 2. 构建docker镜像：docker build -t marp-flask-service：latest . 
+
 3. 启动容器： docker run -d --name marp-flask-service -p 5005:5005 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default marp-flask-service:latest
+
 4. 在dify中导入marp的PPT工具.yml和marp_agent.yml
    - 把marp的PPT工具创建出来的工作流发布为工具,名字设置为save_marp_content，工具描述为"保存marp ppt内容，并获得ppt链接"
    - 在marp_agent.yml创建出的agent里删除旧工具，重新添加引用save_marp_content工具
@@ -233,8 +237,11 @@ DIfy实战：让AI给你出试卷-Dify实战：搭建自动生成试卷的Agent
 ### agent智能出卷使用指南
 
 1. 切换到quiz-flask-service目录下
+
 2. 构建docker镜像：docker build -t quiz-flask-service：latest . 
+
 3. 启动容器： docker run -d --name markmap-flask-service -p 5006:5006 -v $(pwd)/data:/app/data  --network docker_ssrf_proxy_network --network docker_default quiz-flask-service:latest
+
 4. 在dify中导入创建试卷工作流.yml和保存试卷agent.yml
    - 把创建试卷工作流.yml创建出来的工作流发布为工具,名字设置为save_quiz_and_get_url，工具描述为"保存试卷并获取试卷url"
    - 在保存试卷agent.yml创建出的agent里删除旧工具，重新添加引用save_quiz_and_get_url工具
